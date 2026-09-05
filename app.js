@@ -1,0 +1,146 @@
+/* PL Connections — pure vanilla, no deps. Reads data/pl-connections.json. */
+const DATA_URL = 'data/pl-connections.json';
+const state = { players: [], clubs: [], selected: null, pos: new Set(), query: '' };
+const ROLE_LABEL = { senior: 'First team', academy: 'Academy only', both: 'First team + academy' };
+const $ = (id) => document.getElementById(id);
+
+async function init() {
+  let data;
+  try {
+    const r = await fetch(DATA_URL);
+    data = await r.json();
+  } catch (e) {
+    $('club-picker').innerHTML = '<p class="error">Could not load data/pl-connections.json — serve this folder over HTTP (e.g. <code>python3 -m http.server</code>) or check the file exists.</p>';
+    return;
+  }
+  state.players = data.players || [];
+  state.clubs = (data.meta && data.meta.clubs) || [];
+  const season = (data.meta && data.meta.season) || '26/27';
+  document.getElementById('season-label').textContent = season;
+  $('meta').textContent = `${state.players.length} players · ${state.clubs.length} clubs crawled · snapshot ${(data.meta && data.meta.crawledAt || '').slice(0, 10)} · source: Transfermarkt`;
+  renderClubs();
+}
+
+function renderClubs() {
+  const wrap = $('club-chips');
+  wrap.innerHTML = '';
+  for (const c of state.clubs) {
+    const b = document.createElement('button');
+    b.className = 'chip' + (state.selected === c.id ? ' on' : '');
+    b.textContent = c.name;
+    b.title = `${c.name} — ${c.squadSize} players in squad`;
+    b.onclick = () => selectClub(c.id);
+    wrap.appendChild(b);
+  }
+}
+
+function selectClub(id) {
+  state.selected = id;
+  state.query = '';
+  state.pos.clear();
+  $('search').value = '';
+  renderClubs();
+  renderPos();
+  renderResults();
+}
+
+function renderPos() {
+  const wrap = $('pos-chips');
+  wrap.innerHTML = '';
+  if (!state.selected) return;
+  for (const g of ['GK', 'DF', 'MF', 'FW']) {
+    const b = document.createElement('button');
+    b.className = 'chip small' + (state.pos.has(g) ? ' on' : '');
+    b.textContent = g;
+    b.onclick = () => { state.pos.has(g) ? state.pos.delete(g) : state.pos.add(g); renderPos(); renderResults(); };
+    wrap.appendChild(b);
+  }
+}
+
+function matches(p) {
+  if (state.query) {
+    const q = state.query.toLowerCase();
+    if (!(p.name.toLowerCase().includes(q) || p.club.name.toLowerCase().includes(q))) return false;
+  }
+  if (state.pos.size && !state.pos.has(p.group)) return false;
+  return true;
+}
+
+function invYears(inv) {
+  if (inv.years) return inv.years.replace(/-$/, '');
+  if (inv.firstDate) {
+    const f = inv.firstDate.slice(0, 4);
+    const l = inv.lastDate && inv.lastDate.slice(0, 4);
+    return l && l !== f ? `${f}–${l}` : f;
+  }
+  return '—';
+}
+
+function renderResults() {
+  const club = state.clubs.find(c => c.id === state.selected);
+  const section = $('results');
+  if (!club) { section.hidden = true; return; }
+  section.hidden = false;
+
+  const rows = [];
+  const stats = { senior: 0, academy: 0, both: 0, here: 0 };
+  for (const p of state.players) {
+    const inv = (p.involvements || []).find(i => i.club === club.name);
+    if (!inv) continue;
+    stats[inv.role] = (stats[inv.role] || 0) + 1;
+    if (p.club.name === club.name) stats.here++;
+    if (matches(p)) rows.push({ p, inv });
+  }
+  rows.sort((a, b) => a.p.name.localeCompare(b.p.name));
+
+  const total = stats.senior + stats.academy + stats.both;
+  $('summary').innerHTML =
+    `<h2>Connected to ${club.name}</h2>
+     <p><b>${total}</b> player${total === 1 ? '' : 's'} in today's PL have been part of ${club.name}:
+     <span class="tag ft">${stats.senior} first team</span>
+     <span class="tag ac">${stats.academy} academy only</span>
+     <span class="tag bo">${stats.both} both</span>
+     ${stats.here ? ` · <b>${stats.here}</b> still ${stats.here === 1 ? 'is' : 'are'} there now` : ''}</p>`;
+
+  const tbody = $('tbody');
+  tbody.innerHTML = '';
+  for (const { p, inv } of rows) {
+    const tr = document.createElement('tr');
+    tr.className = 'exp';
+    const here = p.club.name === club.name;
+    tr.innerHTML = `
+      <td class="name"><button class="expand">${p.name}</button></td>
+      <td><span class="pos">${p.group || '?'}</span></td>
+      <td>${p.club.name}${here ? ' <span class="dot" title="current squad">●</span>' : ''}</td>
+      <td><span class="tag ${inv.role === 'senior' ? 'ft' : inv.role === 'academy' ? 'ac' : 'bo'}">${ROLE_LABEL[inv.role]}</span></td>
+      <td class="mono">${invYears(inv)}</td>`;
+    tr.querySelector('.expand').onclick = () => toggleDetail(tr, p);
+    tbody.appendChild(tr);
+  }
+  $('empty').hidden = rows.length > 0;
+  $('search').oninput = (e) => { state.query = e.target.value; renderResults(); };
+  $('search').disabled = false;
+}
+
+function toggleDetail(tr, p) {
+  const next = tr.nextElementSibling;
+  if (next && next.classList.contains('detail')) {
+    next.remove();
+    tr.classList.remove('open');
+    return;
+  }
+  const d = document.createElement('tr');
+  d.className = 'detail';
+  const invs = (p.involvements || []).slice().sort((a, b) => (a.lastDate || '').localeCompare(b.lastDate || ''));
+  d.innerHTML = `<td colspan="5"><div class="career">
+    <p class="career-head">${p.name} — career clubs <span class="muted">(per Transfermarkt history)</span></p>
+    <div class="career-grid">${
+      invs.map(i =>
+        `<span class="career-item"><span class="tag ${i.role === 'senior' ? 'ft' : i.role === 'academy' ? 'ac' : 'bo'}">${ROLE_LABEL[i.role]}</span>
+         <b>${i.club}</b> <span class="muted">${invYears(i)}</span></span>`).join('') || '<span class="muted">no club history recorded</span>'
+    }</div></div></td>`;
+  tr.after(d);
+  tr.classList.add('open');
+}
+
+init();

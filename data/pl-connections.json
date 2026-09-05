@@ -1,0 +1,8699 @@
+{
+ "meta": {
+  "season": "2026/2027",
+  "crawledAt": "2026-09-05T20:13:22.868984+00:00",
+  "source": "transfermarkt.com",
+  "clubs": [
+   {
+    "id": 631,
+    "name": "Chelsea",
+    "squadSize": 28
+   },
+   {
+    "id": 11,
+    "name": "Arsenal",
+    "squadSize": 24
+   },
+   {
+    "id": 281,
+    "name": "Manchester City",
+    "squadSize": 25
+   },
+   {
+    "id": 985,
+    "name": "Manchester United",
+    "squadSize": 30
+   },
+   {
+    "id": 31,
+    "name": "Liverpool",
+    "squadSize": 27
+   },
+   {
+    "id": 148,
+    "name": "Tottenham Hotspur",
+    "squadSize": 28
+   }
+  ]
+ },
+ "players": [
+  {
+   "id": "834397",
+   "name": "Mike Penders",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Boorsem Sport",
+     "role": "academy",
+     "years": "2010-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Bregel Sport",
+     "role": "academy",
+     "years": "2016-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "KRC Genk",
+     "role": "academy",
+     "years": "2018-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-27",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-28",
+     "lastDate": "2025-07-28"
+    },
+    {
+     "club": "Genk",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2024-08-28"
+    },
+    {
+     "club": "Jong Genk",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "111873",
+   "name": "Emiliano Martínez",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "CA Independiente",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "both",
+     "years": "2010-2012",
+     "firstDate": "2012-07-01",
+     "lastDate": "2019-05-31"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-30",
+     "lastDate": "2026-08-30"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-16",
+     "lastDate": "2020-09-16"
+    },
+    {
+     "club": "Reading",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-23",
+     "lastDate": "2019-01-23"
+    },
+    {
+     "club": "Getafe",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-02",
+     "lastDate": "2017-08-02"
+    },
+    {
+     "club": "Wolves",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-08-11",
+     "lastDate": "2015-08-11"
+    },
+    {
+     "club": "Rotherham",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-03-20",
+     "lastDate": "2015-03-20"
+    },
+    {
+     "club": "Sheff Wed",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-10-15",
+     "lastDate": "2013-10-15"
+    },
+    {
+     "club": "Oxford United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-05-04",
+     "lastDate": "2012-05-04"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "656316",
+   "name": "Gabriel Slonina",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Chicago Fire",
+     "role": "academy",
+     "years": "2016-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-02",
+     "lastDate": "2024-12-31"
+    },
+    {
+     "club": "Barnsley",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-09",
+     "lastDate": "2024-08-09"
+    },
+    {
+     "club": "KAS Eupen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-10",
+     "lastDate": "2023-08-10"
+    },
+    {
+     "club": "Chicago",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-03-08",
+     "lastDate": "2022-08-03"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "731466",
+   "name": "Teddy Sharman-Lowe",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Leicester City",
+     "role": "academy",
+     "years": "2011-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Burton Albion",
+     "role": "both",
+     "years": "2017-2020",
+     "firstDate": "2020-09-06",
+     "lastDate": "2020-09-06"
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": null,
+     "firstDate": "2020-09-05",
+     "lastDate": "2026-01-19"
+    },
+    {
+     "club": "Bolton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Doncaster",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Bromley",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-10",
+     "lastDate": "2023-07-10"
+    },
+    {
+     "club": "Havant & Water.",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-13",
+     "lastDate": "2023-01-13"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "434224",
+   "name": "Maxence Lacroix",
+   "position": "Centre-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "AS Limeyrat Les Croquants",
+     "role": "academy",
+     "years": "2006-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ES Montignac",
+     "role": "academy",
+     "years": "2008-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Thenon Limeyrat Fossemagne",
+     "role": "academy",
+     "years": "2011-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Trélissac FC",
+     "role": "academy",
+     "years": "2012-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Sochaux-Montbéliard",
+     "role": "academy",
+     "years": "2015-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-30",
+     "lastDate": "2026-07-30"
+    },
+    {
+     "club": "Crystal Palace",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-30",
+     "lastDate": "2024-08-30"
+    },
+    {
+     "club": "Wolfsburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-25",
+     "lastDate": "2020-08-25"
+    },
+    {
+     "club": "FC Sochaux",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "614258",
+   "name": "Levi Colwill",
+   "position": "Centre-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "City Central FC",
+     "role": "academy",
+     "years": "2010-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": "2011-2020",
+     "firstDate": "2019-07-01",
+     "lastDate": "2023-05-31"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-05",
+     "lastDate": "2022-08-05"
+    },
+    {
+     "club": "Huddersfield",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "475411",
+   "name": "Wesley Fofana",
+   "position": "Centre-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "SC Repos Vitrolles",
+     "role": "academy",
+     "years": "2007-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ES Bassin Minier",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "JS Pennes-Mirabeau",
+     "role": "academy",
+     "years": "2010-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SC Air Bel",
+     "role": "academy",
+     "years": "2011-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AS Saint-Étienne",
+     "role": "academy",
+     "years": "2015-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-31",
+     "lastDate": "2022-08-31"
+    },
+    {
+     "club": "Leicester",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-02",
+     "lastDate": "2020-10-02"
+    },
+    {
+     "club": "Saint-Étienne",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1004708",
+   "name": "Josh Acheampong",
+   "position": "Centre-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": "2014-2024",
+     "firstDate": "2022-07-01",
+     "lastDate": "2024-12-18"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1145504",
+   "name": "Aarón Anselmino",
+   "position": "Centre-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Larroudé Foot Ball Club",
+     "role": "academy",
+     "years": "2009-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Juventud Unida de Banderaló",
+     "role": "academy",
+     "years": "2011-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sportivo Realicó",
+     "role": "academy",
+     "years": "2013-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Boca Juniors",
+     "role": "academy",
+     "years": "2017-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-08",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-02-02",
+     "lastDate": "2026-02-02"
+    },
+    {
+     "club": "Dortmund",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-27",
+     "lastDate": "2025-08-27"
+    },
+    {
+     "club": "Boca Juniors",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-01",
+     "lastDate": "2024-08-09"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "904802",
+   "name": "Jorrel Hato",
+   "position": "Left-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "IJVV De Zwervers",
+     "role": "academy",
+     "years": "2011-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sportclub Feyenoord",
+     "role": "academy",
+     "years": "2013-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sparta Rotterdam",
+     "role": "academy",
+     "years": "2015-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "role": "academy",
+     "years": "2018-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-03",
+     "lastDate": "2025-08-03"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-05-05",
+     "lastDate": "2023-05-05"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "596122",
+   "name": "Pep Chavarría",
+   "position": "Left-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-12",
+     "lastDate": "2026-08-12"
+    },
+    {
+     "club": "Rayo Vallecano",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-31",
+     "lastDate": "2022-08-31"
+    },
+    {
+     "club": "Real Zaragoza",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-19",
+     "lastDate": "2020-08-19"
+    },
+    {
+     "club": "UE Olot",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-09",
+     "lastDate": "2018-07-09"
+    },
+    {
+     "club": "UE Figueres",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "472423",
+   "name": "Reece James",
+   "position": "Right-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Kew Park Rangers",
+     "role": "academy",
+     "years": "2004-2006",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Epsom Eagles",
+     "role": "academy",
+     "years": "2006-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Wigan",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "895937",
+   "name": "Marco Palestra",
+   "position": "Right-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "GS Assago (2010-14)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Atalanta",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Cagliari",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-26",
+     "lastDate": "2025-08-26"
+    },
+    {
+     "club": "Acc. Inter",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "620322",
+   "name": "Malo Gusto",
+   "position": "Right-Back",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "AS Villefontaine",
+     "role": "academy",
+     "years": "2012-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Bourgoin-Jallieu",
+     "role": "academy",
+     "years": "2015-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Olympique Lyonnais",
+     "role": "academy",
+     "years": "2016-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-29",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Lyon",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2023-01-30"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "687626",
+   "name": "Moisés Caicedo",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "CD Espoli",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CSD Independiente del Valle",
+     "role": "academy",
+     "years": "2016-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-14",
+     "lastDate": "2023-08-14"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-02-01",
+     "lastDate": "2022-01-12"
+    },
+    {
+     "club": "Beerschot VA",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-31",
+     "lastDate": "2021-08-31"
+    },
+    {
+     "club": "Independiente",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "628451",
+   "name": "Roméo Lavia",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "SC Woluwe",
+     "role": "academy",
+     "years": "2011-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "RSC Anderlecht",
+     "role": "academy",
+     "years": "2012-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "academy",
+     "years": "2020-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-18",
+     "lastDate": "2023-08-18"
+    },
+    {
+     "club": "Southampton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-06",
+     "lastDate": "2022-07-06"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "849410",
+   "name": "Valentín Barco",
+   "position": "Central Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Club Atlético Sportivo",
+     "role": "academy",
+     "years": "2009-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Boca Juniors",
+     "role": "academy",
+     "years": "2013-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-02",
+     "lastDate": "2026-08-02"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-02-02",
+     "lastDate": "2025-07-02"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-20",
+     "lastDate": "2025-06-30"
+    },
+    {
+     "club": "Sevilla FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-23",
+     "lastDate": "2024-08-23"
+    },
+    {
+     "club": "Boca Juniors",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "61651",
+   "name": "Jordan Henderson",
+   "position": "Central Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Fulwell Juniors",
+     "role": "academy",
+     "years": "1996-1998",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sunderland",
+     "role": "both",
+     "years": "1998-2008",
+     "firstDate": "2006-07-01",
+     "lastDate": "2009-04-06"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-03",
+     "lastDate": "2026-08-03"
+    },
+    {
+     "club": "Brentford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-15",
+     "lastDate": "2025-07-15"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-18",
+     "lastDate": "2024-01-18"
+    },
+    {
+     "club": "Al-Ettifaq",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-27",
+     "lastDate": "2023-07-27"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    },
+    {
+     "club": "Coventry City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2009-01-29",
+     "lastDate": "2009-01-29"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "503743",
+   "name": "Morgan Rogers",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Halas Hawks",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "West Bromwich Albion",
+     "role": "academy",
+     "years": "2010-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-21",
+     "lastDate": "2026-07-21"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-02-01",
+     "lastDate": "2024-02-01"
+    },
+    {
+     "club": "Middlesbrough",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-07",
+     "lastDate": "2023-07-07"
+    },
+    {
+     "club": "Blackpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-04",
+     "lastDate": "2023-01-04"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-23",
+     "lastDate": "2021-08-23"
+    },
+    {
+     "club": "Lincoln City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-04",
+     "lastDate": "2021-01-04"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "568177",
+   "name": "Cole Palmer",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "NJ Wythenshawe",
+     "role": "academy",
+     "years": "2006-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "both",
+     "years": "2010-2020",
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-09-01",
+     "lastDate": "2023-09-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "1052439",
+   "name": "Kendry Páez",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Academia Alfaro Moreno",
+     "role": "academy",
+     "years": "2012-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CS Emelec",
+     "role": "academy",
+     "years": "2015-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CS Patria",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2026-08-28"
+    },
+    {
+     "club": "River Plate",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-01-30",
+     "lastDate": "2026-01-30"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-31",
+     "lastDate": "2025-07-31"
+    },
+    {
+     "club": "Independiente",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-01",
+     "lastDate": "2023-01-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "670882",
+   "name": "Jamie Gittens",
+   "position": "Left Winger",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Caversham Trents",
+     "role": "academy",
+     "years": "2009-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Reading FC",
+     "role": "academy",
+     "years": "2012-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": "2012-2012",
+     "firstDate": "2012-01-01",
+     "lastDate": "2025-07-05"
+    },
+    {
+     "club": "Manchester City",
+     "role": "academy",
+     "years": "2018-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Borussia Dortmund",
+     "role": "academy",
+     "years": "2020-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dortmund",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1056993",
+   "name": "Estêvão",
+   "position": "Right Winger",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Cruzeiro EC",
+     "role": "academy",
+     "years": "2017-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SE Palmeiras",
+     "role": "academy",
+     "years": "2021-2024",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-14",
+     "lastDate": "2025-07-14"
+    },
+    {
+     "club": "Palmeiras",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-18",
+     "lastDate": "2024-01-18"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "487465",
+   "name": "Pedro Neto",
+   "position": "Right Winger",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "SC Vianense",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Perspectiva em Jogo",
+     "role": "academy",
+     "years": "2010-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SC Braga",
+     "role": "academy",
+     "years": "2013-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Palmeiras FC",
+     "role": "academy",
+     "years": "2015-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SS Lazio",
+     "role": "academy",
+     "years": "2017-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-11",
+     "lastDate": "2024-08-11"
+    },
+    {
+     "club": "Wolves",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-02",
+     "lastDate": "2019-08-02"
+    },
+    {
+     "club": "Lazio",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-31",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Braga",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2019-06-30"
+    },
+    {
+     "club": "PEJ - AD",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-07-01",
+     "lastDate": "2010-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1138758",
+   "name": "Geovany Quenda",
+   "position": "Right Winger",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "CF Damaiense (2016/17)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SL Benfica",
+     "role": "academy",
+     "years": "2017-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sporting CP",
+     "role": "academy",
+     "years": "2019-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Sporting Sub-15",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "626724",
+   "name": "João Pedro",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Fluminense FC",
+     "role": "academy",
+     "years": "2011-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-02",
+     "lastDate": "2025-07-02"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Watford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    },
+    {
+     "club": "Fluminense",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-01",
+     "lastDate": "2019-01-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "559328",
+   "name": "Emmanuel Emegha",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "KRSV Vredenburgh",
+     "role": "academy",
+     "years": "2010-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sparta Rotterdam",
+     "role": "academy",
+     "years": "2016-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-22",
+     "lastDate": "2023-07-22"
+    },
+    {
+     "club": "Sturm Graz",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-04",
+     "lastDate": "2022-08-04"
+    },
+    {
+     "club": "Royal Antwerp",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-31",
+     "lastDate": "2022-01-31"
+    },
+    {
+     "club": "Sparta R.",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-01",
+     "lastDate": "2020-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "67063",
+   "name": "Danny Welbeck",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 631,
+    "name": "Chelsea"
+   },
+   "involvements": [
+    {
+     "club": "Fletcher Moss Rangers",
+     "role": "academy",
+     "years": "1998-2001",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2001-2008",
+     "firstDate": "2008-07-01",
+     "lastDate": "2011-05-31"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-01",
+     "lastDate": "2026-08-01"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-18",
+     "lastDate": "2020-10-18"
+    },
+    {
+     "club": "Watford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-07",
+     "lastDate": "2019-08-07"
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-09-01",
+     "lastDate": "2014-09-01"
+    },
+    {
+     "club": "Sunderland",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-08-12",
+     "lastDate": "2010-08-12"
+    },
+    {
+     "club": "Preston",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-01-25",
+     "lastDate": "2010-01-25"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "262749",
+   "name": "David Raya",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "UE Cornellà",
+     "role": "academy",
+     "years": "2004-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Blackburn Rovers",
+     "role": "academy",
+     "years": "2012-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-15",
+     "lastDate": "2024-07-04"
+    },
+    {
+     "club": "Brentford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-06",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "Blackburn",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2015-01-05"
+    },
+    {
+     "club": "Southport",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-09-19",
+     "lastDate": "2014-09-19"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "542586",
+   "name": "Illan Meslier",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "ES Merlevenez",
+     "role": "academy",
+     "years": "2005-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Lorient",
+     "role": "both",
+     "years": "2009-2018",
+     "firstDate": "2018-07-01",
+     "lastDate": "2020-07-23"
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-09",
+     "lastDate": "2026-07-09"
+    },
+    {
+     "club": "Leeds United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-08",
+     "lastDate": "2020-07-27"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "192279",
+   "name": "Kepa Arrizabalaga",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Athletic Bilbao (2004–2012)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-08",
+     "lastDate": "2025-06-30"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-29",
+     "lastDate": "2024-08-29"
+    },
+    {
+     "club": "Real Madrid",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-14",
+     "lastDate": "2023-08-14"
+    },
+    {
+     "club": "Athletic Club",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2016-06-30"
+    },
+    {
+     "club": "Real Valladolid",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-07-20",
+     "lastDate": "2015-07-20"
+    },
+    {
+     "club": "Ponferradina",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-01-05",
+     "lastDate": "2015-01-05"
+    },
+    {
+     "club": "Bilbao Athletic",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-01-31",
+     "lastDate": "2013-01-31"
+    },
+    {
+     "club": "CD Basconia",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-01-01",
+     "lastDate": "2012-01-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "495666",
+   "name": "William Saliba",
+   "position": "Centre-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "AS Bondy",
+     "role": "academy",
+     "years": "2008-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Montfermeil",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AS Saint-Étienne",
+     "role": "academy",
+     "years": "2016-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-25",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "Marseille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-15",
+     "lastDate": "2021-07-15"
+    },
+    {
+     "club": "Nice",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-04",
+     "lastDate": "2021-01-04"
+    },
+    {
+     "club": "Saint-Étienne",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2019-07-26"
+    },
+    {
+     "club": "Montfermeil Jgd",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "435338",
+   "name": "Gabriel",
+   "position": "Centre-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Avaí Futebol Clube",
+     "role": "academy",
+     "years": "2012-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-01",
+     "lastDate": "2020-09-01"
+    },
+    {
+     "club": "Lille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-31",
+     "lastDate": "2018-06-30"
+    },
+    {
+     "club": "Troyes",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Avaí FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-01-01",
+     "lastDate": "2016-01-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "659813",
+   "name": "Piero Hincapié",
+   "position": "Centre-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Emelec Esmeraldas",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Barcelona Esmeraldas",
+     "role": "academy",
+     "years": "2010-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CS Norte América",
+     "role": "academy",
+     "years": "2012-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Deportivo Azogues",
+     "role": "academy",
+     "years": "2013-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Independiente del Valle",
+     "role": "academy",
+     "years": "2016-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Leverkusen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-16",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "CA Talleres",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-20",
+     "lastDate": "2020-08-20"
+    },
+    {
+     "club": "Independiente",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "413403",
+   "name": "Ezri Konsa",
+   "position": "Centre-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Senrab FC",
+     "role": "academy",
+     "years": "2006-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Charlton Athletic",
+     "role": "academy",
+     "years": "2008-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-21",
+     "lastDate": "2026-08-21"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-11",
+     "lastDate": "2019-07-11"
+    },
+    {
+     "club": "Brentford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "Charlton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "646750",
+   "name": "Cristhian Mosquera",
+   "position": "Centre-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "SCD Carolinas",
+     "role": "academy",
+     "years": "2010-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Hércules CF",
+     "role": "academy",
+     "years": "2012-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Valencia CF",
+     "role": "academy",
+     "years": "2016-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-24",
+     "lastDate": "2025-07-24"
+    },
+    {
+     "club": "Valencia",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-01",
+     "lastDate": "2023-01-01"
+    },
+    {
+     "club": "Valencia CF You",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "502821",
+   "name": "Riccardo Calafiori",
+   "position": "Left-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Petriana Calcio (2008-10)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-29",
+     "lastDate": "2024-07-29"
+    },
+    {
+     "club": "Bologna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-31",
+     "lastDate": "2023-08-31"
+    },
+    {
+     "club": "Basel",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-31",
+     "lastDate": "2022-08-31"
+    },
+    {
+     "club": "Roma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-01",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "Genoa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-14",
+     "lastDate": "2022-01-14"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "890721",
+   "name": "Myles Lewis-Skelly",
+   "position": "Left-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Arsenal",
+     "role": "both",
+     "years": "2015-2023",
+     "firstDate": "2022-07-01",
+     "lastDate": "2024-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "420243",
+   "name": "Jurriën Timber",
+   "position": "Right-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "DVSU",
+     "role": "academy",
+     "years": "2006-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Feyenoord",
+     "role": "academy",
+     "years": "2008-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "role": "academy",
+     "years": "2014-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-14",
+     "lastDate": "2023-07-14"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-18",
+     "lastDate": "2020-09-18"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "335721",
+   "name": "Ben White",
+   "position": "Right-Back",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Southampton FC",
+     "role": "academy",
+     "years": "2006-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Brighton & Hove Albion FC",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-30",
+     "lastDate": "2021-07-30"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "both",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2020-07-31"
+    },
+    {
+     "club": "Leeds United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Peterborough",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-03",
+     "lastDate": "2019-01-03"
+    },
+    {
+     "club": "Newport County",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-01",
+     "lastDate": "2017-08-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "423440",
+   "name": "Martín Zubimendi",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Antiguoko",
+     "role": "academy",
+     "years": "2006-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Real Sociedad",
+     "role": "both",
+     "years": "2011-2019",
+     "firstDate": "2020-09-10",
+     "lastDate": "2020-09-10"
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-06",
+     "lastDate": "2025-07-06"
+    },
+    {
+     "club": "Real Sociedad C",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Real Sociedad Y",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "357662",
+   "name": "Declan Rice",
+   "position": "Central Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Dickerage Lane Adventure Playground",
+     "role": "academy",
+     "years": "2001-2006",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "academy",
+     "years": "2006-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "West Ham United",
+     "role": "both",
+     "years": "2013-2017",
+     "firstDate": "2015-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-15",
+     "lastDate": "2023-07-15"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "520624",
+   "name": "Bruno Guimarães",
+   "position": "Central Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Audax Rio de Janeiro EC",
+     "role": "academy",
+     "years": "2012-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Grêmio Osasco Audax",
+     "role": "academy",
+     "years": "2015-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-08",
+     "lastDate": "2026-08-08"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-30",
+     "lastDate": "2022-01-30"
+    },
+    {
+     "club": "Lyon",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-30",
+     "lastDate": "2020-01-30"
+    },
+    {
+     "club": "Atlético-PR",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-05-11",
+     "lastDate": "2017-05-11"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "338424",
+   "name": "Mikel Merino",
+   "position": "Central Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "CD Amigó (-2006)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Osasuna",
+     "role": "both",
+     "years": "2006-2014",
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-27",
+     "lastDate": "2024-08-27"
+    },
+    {
+     "club": "Real Sociedad",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-12",
+     "lastDate": "2018-07-12"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-28",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "Dortmund",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2018-06-30"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "316264",
+   "name": "Martin Ødegaard",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Drammen Strong",
+     "role": "academy",
+     "years": "2005-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Strømsgodset IF (2009–2013)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-27",
+     "lastDate": "2021-08-20"
+    },
+    {
+     "club": "Real Madrid",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-08",
+     "lastDate": "2021-06-30"
+    },
+    {
+     "club": "Real Sociedad",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-05",
+     "lastDate": "2019-07-05"
+    },
+    {
+     "club": "Vitesse",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-21",
+     "lastDate": "2018-08-21"
+    },
+    {
+     "club": "Heerenveen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-09",
+     "lastDate": "2017-01-09"
+    },
+    {
+     "club": "RM Castilla",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-01-22",
+     "lastDate": "2015-01-22"
+    },
+    {
+     "club": "Strømsgodset",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-05-05",
+     "lastDate": "2014-05-05"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "479999",
+   "name": "Eberechi Eze",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Bruin JFC",
+     "role": "academy",
+     "years": "2005-2006",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "both",
+     "years": "2006-2011",
+     "firstDate": "2025-08-23",
+     "lastDate": "2025-08-23"
+    },
+    {
+     "club": "Fulham",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Reading FC",
+     "role": "academy",
+     "years": "2014-",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Millwall FC",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Crystal Palace",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-28",
+     "lastDate": "2020-08-28"
+    },
+    {
+     "club": "QPR",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2018-01-02"
+    },
+    {
+     "club": "Wycombe",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-30",
+     "lastDate": "2017-08-30"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "451677",
+   "name": "Christos Tzolis",
+   "position": "Left Winger",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Doxa Pentalofos",
+     "role": "academy",
+     "years": "2006-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "PAOK Thessaloniki",
+     "role": "academy",
+     "years": "2018-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SG Rosenhöhe Offenbach",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Alemannia Königstädten",
+     "role": "academy",
+     "years": "2017-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-23",
+     "lastDate": "2026-07-23"
+    },
+    {
+     "club": "Club Brugge",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-04",
+     "lastDate": "2024-07-04"
+    },
+    {
+     "club": "F. Düsseldorf",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-06",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Norwich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-12",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "FC Twente",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-22",
+     "lastDate": "2022-07-22"
+    },
+    {
+     "club": "PAOK",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-03",
+     "lastDate": "2020-08-03"
+    },
+    {
+     "club": "Königst. Jgd.",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "433177",
+   "name": "Bukayo Saka",
+   "position": "Right Winger",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Greenford Celtic",
+     "role": "academy",
+     "years": "2007-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Watford FC",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "both",
+     "years": "2010-2018",
+     "firstDate": "2010-07-01",
+     "lastDate": "2019-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "503987",
+   "name": "Noni Madueke",
+   "position": "Right Winger",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "King George FC (-2011)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Crystal Palace",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "academy",
+     "years": "2014-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "PSV Eindhoven",
+     "role": "academy",
+     "years": "2018-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-18",
+     "lastDate": "2025-07-18"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-20",
+     "lastDate": "2023-01-20"
+    },
+    {
+     "club": "PSV",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-01",
+     "lastDate": "2020-08-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1187629",
+   "name": "Max Dowman",
+   "position": "Right Winger",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Billericay Town FC",
+     "role": "academy",
+     "years": "2013-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "both",
+     "years": "2015-2025",
+     "firstDate": "2024-07-01",
+     "lastDate": "2025-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "325443",
+   "name": "Viktor Gyökeres",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "IFK Aspudden-Tellus",
+     "role": "academy",
+     "years": "2010-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "IF Brommapojkarna",
+     "role": "academy",
+     "years": "2014-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-26",
+     "lastDate": "2025-07-26"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-13",
+     "lastDate": "2023-07-13"
+    },
+    {
+     "club": "Coventry City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-15",
+     "lastDate": "2021-07-09"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-01",
+     "lastDate": "2021-05-31"
+    },
+    {
+     "club": "Swansea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-02",
+     "lastDate": "2020-10-02"
+    },
+    {
+     "club": "St. Pauli",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-25",
+     "lastDate": "2019-07-25"
+    },
+    {
+     "club": "Brommapojkarna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-01-01",
+     "lastDate": "2016-01-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "309400",
+   "name": "Kai Havertz",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 11,
+    "name": "Arsenal"
+   },
+   "involvements": [
+    {
+     "club": "Alemannia Mariadorf",
+     "role": "academy",
+     "years": "2003-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Alemannia Aachen",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Bayer 04 Leverkusen",
+     "role": "academy",
+     "years": "2010-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-04",
+     "lastDate": "2020-09-04"
+    },
+    {
+     "club": "Leverkusen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "315858",
+   "name": "Gianluigi Donnarumma",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Club Napoli (2003-13)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-01",
+     "lastDate": "2025-09-01"
+    },
+    {
+     "club": "PSG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-14",
+     "lastDate": "2021-07-14"
+    },
+    {
+     "club": "AC Milan",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-07-01",
+     "lastDate": "2015-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "229604",
+   "name": "Gerónimo Rulli",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Ateneo Popular",
+     "role": "academy",
+     "years": "1996-1998",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Estudiantes de La Plata",
+     "role": "academy",
+     "years": "1998-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-08-08",
+     "lastDate": "2026-08-12"
+    },
+    {
+     "club": "Marseille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-11",
+     "lastDate": "2024-08-11"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-06",
+     "lastDate": "2023-01-06"
+    },
+    {
+     "club": "Villarreal",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-04",
+     "lastDate": "2020-09-04"
+    },
+    {
+     "club": "Real Sociedad",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-24",
+     "lastDate": "2020-06-30"
+    },
+    {
+     "club": "Montpellier",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-14",
+     "lastDate": "2019-08-14"
+    },
+    {
+     "club": "CD Maldonado",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2016-06-30"
+    },
+    {
+     "club": "Estudiantes LP",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "116648",
+   "name": "Marcus Bettinelli",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Fulham",
+     "role": "both",
+     "years": "2006-2012",
+     "firstDate": "2012-07-01",
+     "lastDate": "2021-05-31"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-06-10",
+     "lastDate": "2025-06-10"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-28",
+     "lastDate": "2021-07-28"
+    },
+    {
+     "club": "Middlesbrough",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-10",
+     "lastDate": "2020-09-10"
+    },
+    {
+     "club": "Accrington",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-08-28",
+     "lastDate": "2013-08-28"
+    },
+    {
+     "club": "Dartford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-08-20",
+     "lastDate": "2012-08-20"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "392757",
+   "name": "Marc Guéhi",
+   "position": "Centre-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Cray Wanderers",
+     "role": "academy",
+     "years": "2005-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": "2007-2018",
+     "firstDate": "2016-07-01",
+     "lastDate": "2021-05-31"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-01-19",
+     "lastDate": "2026-01-19"
+    },
+    {
+     "club": "Crystal Palace",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-18",
+     "lastDate": "2021-07-18"
+    },
+    {
+     "club": "Swansea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-10",
+     "lastDate": "2020-08-26"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "475959",
+   "name": "Josko Gvardiol",
+   "position": "Centre-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "NK Trešnjevka (2009–2010)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dinamo Zagreb",
+     "role": "both",
+     "years": "2010-2019",
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-05",
+     "lastDate": "2023-08-05"
+    },
+    {
+     "club": "Leipzig",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "258004",
+   "name": "Rúben Dias",
+   "position": "Centre-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "CF Estrela da Amadora",
+     "role": "academy",
+     "years": "2006-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SL Benfica",
+     "role": "academy",
+     "years": "2008-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-29",
+     "lastDate": "2020-09-29"
+    },
+    {
+     "club": "Benfica",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "763079",
+   "name": "Abdukodir Khusanov",
+   "position": "Centre-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "FC Bunyodkor",
+     "role": "academy",
+     "years": "2011-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-20",
+     "lastDate": "2025-01-20"
+    },
+    {
+     "club": "Lens",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-24",
+     "lastDate": "2023-07-24"
+    },
+    {
+     "club": "Energetik-BGU",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-03-17",
+     "lastDate": "2022-03-17"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1005575",
+   "name": "Vitor Reis",
+   "position": "Centre-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Palmeiras",
+     "role": "both",
+     "years": "2016-2024",
+     "firstDate": "2024-06-01",
+     "lastDate": "2024-06-01"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-21",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Girona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-08",
+     "lastDate": "2025-08-08"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "743413",
+   "name": "Nico O'Reilly",
+   "position": "Left-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Manchester City",
+     "role": "both",
+     "years": "2013-2023",
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "578391",
+   "name": "Rayan Aït-Nouri",
+   "position": "Left-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "AS Val de Fontenay",
+     "role": "academy",
+     "years": "2009-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ASF Le Perreux 94",
+     "role": "academy",
+     "years": "2012-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Paris FC",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Angers SCO",
+     "role": "both",
+     "years": "2016-2018",
+     "firstDate": "2018-07-01",
+     "lastDate": "2021-06-30"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-06-09",
+     "lastDate": "2025-06-09"
+    },
+    {
+     "club": "Wolves",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-04",
+     "lastDate": "2021-07-09"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "576121",
+   "name": "Josh Wilson-Esbrand",
+   "position": "Left-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "West Ham United",
+     "role": "academy",
+     "years": "2017-2019",
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "Manchester City",
+     "role": "both",
+     "years": "2019-2021",
+     "firstDate": "2023-01-01",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Radomiak",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-08",
+     "lastDate": "2025-09-08"
+    },
+    {
+     "club": "Stoke City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-22",
+     "lastDate": "2025-01-22"
+    },
+    {
+     "club": "Cardiff",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-02-01",
+     "lastDate": "2024-02-01"
+    },
+    {
+     "club": "Stade Reims",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-23",
+     "lastDate": "2023-07-23"
+    },
+    {
+     "club": "Coventry City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-10",
+     "lastDate": "2023-01-10"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "601883",
+   "name": "Matheus Nunes",
+   "position": "Right-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "CR Flamengo",
+     "role": "academy",
+     "years": "2006-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "GD Ericeirense",
+     "role": "academy",
+     "years": "2012-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-09-01",
+     "lastDate": "2023-09-01"
+    },
+    {
+     "club": "Wolves",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-18",
+     "lastDate": "2022-08-18"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-05-01",
+     "lastDate": "2020-05-01"
+    },
+    {
+     "club": "Estoril",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "Ericeirense",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    },
+    {
+     "club": "Ericeirense S19",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-01-01",
+     "lastDate": "2015-01-01"
+    },
+    {
+     "club": "Ericeirense S17",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2013-07-01"
+    },
+    {
+     "club": "Ericeirense S15",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-07-01",
+     "lastDate": "2012-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "701057",
+   "name": "Rico Lewis",
+   "position": "Right-Back",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Manchester City",
+     "role": "both",
+     "years": "2013-2022",
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "567576",
+   "name": "Elliot Anderson",
+   "position": "Central Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Wallsend Boys Club",
+     "role": "academy",
+     "years": "2007-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Newcastle United",
+     "role": "both",
+     "years": "2010-2022",
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-23",
+     "lastDate": "2026-07-23"
+    },
+    {
+     "club": "Nott'm Forest",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Bristol Rovers",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-31",
+     "lastDate": "2022-01-31"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "648195",
+   "name": "Enzo Fernández",
+   "position": "Central Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Club La Recova",
+     "role": "academy",
+     "years": "2005-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA River Plate",
+     "role": "academy",
+     "years": "2007-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-09-01",
+     "lastDate": "2026-09-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-31",
+     "lastDate": "2023-01-31"
+    },
+    {
+     "club": "Benfica",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-14",
+     "lastDate": "2022-07-14"
+    },
+    {
+     "club": "River Plate",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    },
+    {
+     "club": "Defensa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-22",
+     "lastDate": "2020-08-22"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "1097139",
+   "name": "Ayyoub Bouaddi",
+   "position": "Central Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "AFC Creil",
+     "role": "academy",
+     "years": "2012-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "LOSC Lille",
+     "role": "academy",
+     "years": "2021-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-26",
+     "lastDate": "2026-08-26"
+    },
+    {
+     "club": "Lille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "51471",
+   "name": "Mateo Kovacic",
+   "position": "Central Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "ASKÖ Ebelsberg",
+     "role": "academy",
+     "years": "1998-2000",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "LASK Linz",
+     "role": "academy",
+     "years": "2000-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "role": "academy",
+     "years": "2007-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-09",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Real Madrid",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-08-18",
+     "lastDate": "2019-06-30"
+    },
+    {
+     "club": "Inter",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-01-31",
+     "lastDate": "2013-01-31"
+    },
+    {
+     "club": "Dinamo Zagreb",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-10-01",
+     "lastDate": "2010-10-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "607223",
+   "name": "Rayan Cherki",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "AS Saint-Priest",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Olympique Lyonnais",
+     "role": "academy",
+     "years": "2010-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-06-10",
+     "lastDate": "2025-06-10"
+    },
+    {
+     "club": "Lyon",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "406635",
+   "name": "Phil Foden",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Reddish Vulcans",
+     "role": "academy",
+     "years": "2007-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "both",
+     "years": "2008-2017",
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "486049",
+   "name": "Jérémy Doku",
+   "position": "Left Winger",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "KVC Olympic Deurne",
+     "role": "academy",
+     "years": "2006-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tubantia Borgerhout",
+     "role": "academy",
+     "years": "2007-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Beerschot AC",
+     "role": "academy",
+     "years": "2009-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "RSC Anderlecht",
+     "role": "both",
+     "years": "2012-2019",
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-24",
+     "lastDate": "2023-08-24"
+    },
+    {
+     "club": "Stade Rennais",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-05",
+     "lastDate": "2020-10-05"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "583255",
+   "name": "Antoine Semenyo",
+   "position": "Right Winger",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "SGS College",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Bristol City",
+     "role": "both",
+     "years": "2017-2018",
+     "firstDate": "2018-07-01",
+     "lastDate": "2020-05-31"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-01-09",
+     "lastDate": "2026-01-09"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-27",
+     "lastDate": "2023-01-27"
+    },
+    {
+     "club": "Sunderland",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-31",
+     "lastDate": "2020-01-31"
+    },
+    {
+     "club": "Newport County",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-18",
+     "lastDate": "2018-07-18"
+    },
+    {
+     "club": "Bath City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-20",
+     "lastDate": "2018-01-20"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "623570",
+   "name": "Iliman Ndiaye",
+   "position": "Right Winger",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Rouen Sapins FC",
+     "role": "academy",
+     "years": "2007-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Rouen",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Olympique de Marseille",
+     "role": "academy",
+     "years": "2010-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dakar Sacré-Cœur",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Boreham Wood",
+     "role": "academy",
+     "years": "2016-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Rising Ballers FC",
+     "role": "academy",
+     "years": "2019-",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-09-01",
+     "lastDate": "2026-09-01"
+    },
+    {
+     "club": "Everton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-03",
+     "lastDate": "2024-07-03"
+    },
+    {
+     "club": "Marseille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-01",
+     "lastDate": "2023-08-01"
+    },
+    {
+     "club": "Sheff Utd",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    },
+    {
+     "club": "Hyde United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-24",
+     "lastDate": "2020-01-24"
+    },
+    {
+     "club": "AFC Hillgate",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-04-01",
+     "lastDate": "2019-04-01"
+    },
+    {
+     "club": "Sacré Cœur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1082631",
+   "name": "Allan",
+   "position": "Right Winger",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Figueirense Futebol Clube (SC)",
+     "role": "academy",
+     "years": "2018-",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-31",
+     "lastDate": "2026-08-31"
+    },
+    {
+     "club": "Palmeiras",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-10",
+     "lastDate": "2025-01-10"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1187640",
+   "name": "Ryan McAidoo",
+   "position": "Right Winger",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "418560",
+   "name": "Erling Haaland",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 281,
+    "name": "Manchester City"
+   },
+   "involvements": [
+    {
+     "club": "Bryne FK",
+     "role": "academy",
+     "years": "2006-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Dortmund",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    },
+    {
+     "club": "Salzburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-01",
+     "lastDate": "2019-01-01"
+    },
+    {
+     "club": "Molde FK",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-02-01",
+     "lastDate": "2017-02-01"
+    },
+    {
+     "club": "Bryne",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-09-08",
+     "lastDate": "2015-09-08"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "503883",
+   "name": "Senne Lammens",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "RC Bambrugge",
+     "role": "academy",
+     "years": "2007-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FCV Dender EH",
+     "role": "academy",
+     "years": "2010-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Club Brugge KV",
+     "role": "academy",
+     "years": "2014-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-01",
+     "lastDate": "2025-09-01"
+    },
+    {
+     "club": "Royal Antwerp",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Club Brugge",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-01",
+     "lastDate": "2020-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "99397",
+   "name": "Karl Darlow",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Aston Villa",
+     "role": "academy",
+     "years": "1999-2006",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Nottingham Forest",
+     "role": "academy",
+     "years": "2006-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-14",
+     "lastDate": "2026-07-14"
+    },
+    {
+     "club": "Leeds United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-29",
+     "lastDate": "2023-07-29"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-08-09",
+     "lastDate": "2023-05-31"
+    },
+    {
+     "club": "Hull City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-31",
+     "lastDate": "2023-01-31"
+    },
+    {
+     "club": "Nott'm Forest",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-07-01",
+     "lastDate": "2014-08-10"
+    },
+    {
+     "club": "Walsall",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-09-21",
+     "lastDate": "2013-01-01"
+    },
+    {
+     "club": "Newport County",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-03-08",
+     "lastDate": "2012-03-08"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "34130",
+   "name": "Tom Heaton",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Wrexham AFC",
+     "role": "academy",
+     "years": "1994-1997",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "1997-2004",
+     "firstDate": "2004-07-01",
+     "lastDate": "2021-07-02"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-01",
+     "lastDate": "2019-08-01"
+    },
+    {
+     "club": "Burnley",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2013-07-01"
+    },
+    {
+     "club": "Bristol City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-07-27",
+     "lastDate": "2012-07-27"
+    },
+    {
+     "club": "Cardiff",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2008-07-01",
+     "lastDate": "2010-07-01"
+    },
+    {
+     "club": "Wycombe",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2010-02-12",
+     "lastDate": "2010-02-12"
+    },
+    {
+     "club": "Rochdale",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2009-11-13",
+     "lastDate": "2009-11-13"
+    },
+    {
+     "club": "QPR",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2009-08-15",
+     "lastDate": "2009-08-15"
+    },
+    {
+     "club": "Royal Antwerp",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2006-01-01",
+     "lastDate": "2006-01-01"
+    },
+    {
+     "club": "Swindon Town",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2005-08-01",
+     "lastDate": "2005-08-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "620362",
+   "name": "Dermot Mee",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Walsall FC (-2015)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2015-2021",
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Altrincham",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-16",
+     "lastDate": "2022-08-16"
+    },
+    {
+     "club": "Witton Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-03-16",
+     "lastDate": "2022-03-16"
+    },
+    {
+     "club": "Runcorn Linnets",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-11-26",
+     "lastDate": "2021-11-26"
+    },
+    {
+     "club": "Trafford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-28",
+     "lastDate": "2021-08-28"
+    },
+    {
+     "club": "Fulham",
+     "role": "academy",
+     "years": null,
+     "firstDate": "2021-01-04",
+     "lastDate": "2021-01-04"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "923831",
+   "name": "Leny Yoro",
+   "position": "Centre-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "UJA Alfortville",
+     "role": "academy",
+     "years": "2011-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Villeneuve d'Ascq Métropole",
+     "role": "academy",
+     "years": "2012-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "LOSC Lille",
+     "role": "academy",
+     "years": "2017-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-18",
+     "lastDate": "2024-07-18"
+    },
+    {
+     "club": "Lille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "480762",
+   "name": "Lisandro Martínez",
+   "position": "Centre-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Club Urquiza",
+     "role": "academy",
+     "years": "2002-2006",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Club Libertad",
+     "role": "academy",
+     "years": "2006-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Newell's Old Boys",
+     "role": "academy",
+     "years": "2014-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-27",
+     "lastDate": "2022-07-27"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Defensa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-11",
+     "lastDate": "2018-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "326031",
+   "name": "Matthijs de Ligt",
+   "position": "Centre-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "FC Abcoude",
+     "role": "academy",
+     "years": "2005-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "role": "academy",
+     "years": "2009-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-13",
+     "lastDate": "2024-08-13"
+    },
+    {
+     "club": "Bayern Munich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-19",
+     "lastDate": "2022-07-19"
+    },
+    {
+     "club": "Juventus",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-18",
+     "lastDate": "2019-07-18"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-01",
+     "lastDate": "2017-01-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1078163",
+   "name": "Ayden Heaven",
+   "position": "Centre-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Edmonton United",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "West Ham United",
+     "role": "academy",
+     "years": "2014-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Arsenal",
+     "role": "academy",
+     "years": "2019-2025",
+     "firstDate": "2019-11-05",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-02-01",
+     "lastDate": "2025-02-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "177907",
+   "name": "Harry Maguire",
+   "position": "Centre-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Brunsmeer Athletic",
+     "role": "academy",
+     "years": "2000-2002",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Barnsley FC",
+     "role": "academy",
+     "years": "2002-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sheffield United",
+     "role": "academy",
+     "years": "2009-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-05",
+     "lastDate": "2019-08-05"
+    },
+    {
+     "club": "Leicester",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Hull City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-29",
+     "lastDate": "2015-05-31"
+    },
+    {
+     "club": "Wigan",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-02-10",
+     "lastDate": "2015-02-10"
+    },
+    {
+     "club": "Sheff Utd",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "183288",
+   "name": "Luke Shaw",
+   "position": "Left-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Molesey Juniors",
+     "role": "academy",
+     "years": "2000-2003",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Southampton FC",
+     "role": "academy",
+     "years": "2003-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    },
+    {
+     "club": "Southampton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-11-01",
+     "lastDate": "2012-11-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1011738",
+   "name": "Harry Amass",
+   "position": "Left-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Watford FC",
+     "role": "academy",
+     "years": "2016-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2023-2025",
+     "firstDate": "2025-01-01",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Norwich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-01-24",
+     "lastDate": "2026-01-24"
+    },
+    {
+     "club": "Sheff Wed",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-01",
+     "lastDate": "2025-09-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "357147",
+   "name": "Diogo Dalot",
+   "position": "Right-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Escola de Formação Fintas",
+     "role": "academy",
+     "years": "2005-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Porto",
+     "role": "academy",
+     "years": "2008-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Padroense FC",
+     "role": "academy",
+     "years": "2014-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2021-06-30"
+    },
+    {
+     "club": "AC Milan",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-04",
+     "lastDate": "2020-10-04"
+    },
+    {
+     "club": "Porto",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-02-21",
+     "lastDate": "2018-02-21"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "340456",
+   "name": "Noussair Mazraoui",
+   "position": "Right-Back",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "AVV Alphen",
+     "role": "academy",
+     "years": "2001-2004",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Alphense Boys",
+     "role": "academy",
+     "years": "2004-2005",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "role": "academy",
+     "years": "2005-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-13",
+     "lastDate": "2024-08-13"
+    },
+    {
+     "club": "Bayern Munich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-03-12",
+     "lastDate": "2018-03-12"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "973085",
+   "name": "Carlos Baleba",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Futur Soccer FC",
+     "role": "academy",
+     "years": "2014-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "EF Brasseries du Cameroun",
+     "role": "academy",
+     "years": "2017-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-25",
+     "lastDate": "2026-08-25"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-29",
+     "lastDate": "2023-08-29"
+    },
+    {
+     "club": "Lille",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "743600",
+   "name": "Andrey Santos",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "CR Vasco da Gama",
+     "role": "academy",
+     "years": "2011-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-13",
+     "lastDate": "2026-07-13"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-01",
+     "lastDate": "2025-05-31"
+    },
+    {
+     "club": "R. Strasbourg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-02-01",
+     "lastDate": "2024-02-01"
+    },
+    {
+     "club": "Nott'm Forest",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-25",
+     "lastDate": "2023-08-25"
+    },
+    {
+     "club": "Vasco da Gama",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-01",
+     "lastDate": "2023-03-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "476701",
+   "name": "Manuel Ugarte",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Club City Park",
+     "role": "academy",
+     "years": "2005-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Fénix",
+     "role": "both",
+     "years": "2015-2016",
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-30",
+     "lastDate": "2024-08-30"
+    },
+    {
+     "club": "PSG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-07",
+     "lastDate": "2023-07-07"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-09",
+     "lastDate": "2021-08-09"
+    },
+    {
+     "club": "Famalicão",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-04",
+     "lastDate": "2021-01-04"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "820374",
+   "name": "Kobbie Mainoo",
+   "position": "Central Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Cheadle & Gatley",
+     "role": "academy",
+     "years": "2009-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Failsworth Dynamos",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2014-2022",
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "249565",
+   "name": "Youri Tielemans",
+   "position": "Central Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "RSC Anderlecht",
+     "role": "both",
+     "years": "2002-2013",
+     "firstDate": "2013-07-01",
+     "lastDate": "2013-07-01"
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-14",
+     "lastDate": "2026-07-14"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Leicester",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-31",
+     "lastDate": "2019-07-08"
+    },
+    {
+     "club": "Monaco",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2019-06-30"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "1049911",
+   "name": "Tyler Fletcher",
+   "position": "Central Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Manchester City",
+     "role": "academy",
+     "years": "2014-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2023-2026",
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "240306",
+   "name": "Bruno Fernandes",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "FC Infesta",
+     "role": "academy",
+     "years": "2002-2004",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Boavista FC",
+     "role": "academy",
+     "years": "2004-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-29",
+     "lastDate": "2020-01-29"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-02",
+     "lastDate": "2017-07-02"
+    },
+    {
+     "club": "Sampdoria",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-08-16",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Udinese",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2017-06-30"
+    },
+    {
+     "club": "Novara",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-08-27",
+     "lastDate": "2012-08-27"
+    },
+    {
+     "club": "Boavista Y19",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    },
+    {
+     "club": "Boavista CJ",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2004-07-01",
+     "lastDate": "2004-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "346483",
+   "name": "Mason Mount",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Boarhunt Rovers FC",
+     "role": "academy",
+     "years": "2004-2005",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "United Services Portsmouth",
+     "role": "academy",
+     "years": "2005-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": "2007-2017",
+     "firstDate": "2015-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-05",
+     "lastDate": "2023-07-05"
+    },
+    {
+     "club": "Derby",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-17",
+     "lastDate": "2018-07-17"
+    },
+    {
+     "club": "Vitesse",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-24",
+     "lastDate": "2017-07-24"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "1011140",
+   "name": "Jack Fletcher",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Manchester City",
+     "role": "academy",
+     "years": "2014-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2023-2026",
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "258923",
+   "name": "Marcus Rashford",
+   "position": "Left Winger",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Fletcher Moss Rangers",
+     "role": "academy",
+     "years": "2003-2005",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2005-2015",
+     "firstDate": "2016-01-01",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Barcelona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-23",
+     "lastDate": "2025-07-23"
+    },
+    {
+     "club": "Aston Villa",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-02-02",
+     "lastDate": "2025-02-02"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "926952",
+   "name": "Patrick Dorgu",
+   "position": "Left Winger",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-02-02",
+     "lastDate": "2025-02-02"
+    },
+    {
+     "club": "Lecce",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "413039",
+   "name": "Bryan Mbeumo",
+   "position": "Right Winger",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "CO Avallonais",
+     "role": "academy",
+     "years": "2012-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Bourgoin-Jallieu",
+     "role": "academy",
+     "years": "2011-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ESTAC Troyes",
+     "role": "academy",
+     "years": "2013-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-21",
+     "lastDate": "2025-07-21"
+    },
+    {
+     "club": "Brentford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-05",
+     "lastDate": "2019-08-05"
+    },
+    {
+     "club": "Troyes",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "536835",
+   "name": "Amad Diallo",
+   "position": "Right Winger",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Boca Barco",
+     "role": "academy",
+     "years": "2014-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Atalanta BC",
+     "role": "academy",
+     "years": "2015-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-02",
+     "lastDate": "2023-05-31"
+    },
+    {
+     "club": "Sunderland",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-31",
+     "lastDate": "2022-08-31"
+    },
+    {
+     "club": "Rangers",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-27",
+     "lastDate": "2022-01-27"
+    },
+    {
+     "club": "Atalanta",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-01",
+     "lastDate": "2020-09-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "926309",
+   "name": "Shea Lacey",
+   "position": "Right Winger",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Manchester United",
+     "role": "both",
+     "years": "2015-2024",
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "517894",
+   "name": "Matheus Cunha",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "Coritiba FC",
+     "role": "academy",
+     "years": "2013-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Wolves",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Atlético",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-25",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Hertha BSC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-31",
+     "lastDate": "2020-01-31"
+    },
+    {
+     "club": "Leipzig",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "FC Sion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "627442",
+   "name": "Benjamin Sesko",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "NK Krsko",
+     "role": "academy",
+     "years": "2010-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "NK Domzale",
+     "role": "academy",
+     "years": "2018-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-09",
+     "lastDate": "2025-08-09"
+    },
+    {
+     "club": "Leipzig",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Salzburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2021-06-30"
+    },
+    {
+     "club": "FC Liefering",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-02",
+     "lastDate": "2019-07-02"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "435648",
+   "name": "Joshua Zirkzee",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 985,
+    "name": "Manchester United"
+   },
+   "involvements": [
+    {
+     "club": "VV Hekelingen",
+     "role": "academy",
+     "years": "2007-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Spartaan '20",
+     "role": "academy",
+     "years": "2010-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ADO Den Haag",
+     "role": "academy",
+     "years": "2013-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Feyenoord",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Bayern München",
+     "role": "academy",
+     "years": "2017-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-14",
+     "lastDate": "2024-07-14"
+    },
+    {
+     "club": "Bologna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-30",
+     "lastDate": "2022-08-30"
+    },
+    {
+     "club": "Bayern Munich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-01",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "RSC Anderlecht",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-03",
+     "lastDate": "2021-08-03"
+    },
+    {
+     "club": "Parma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-02-01",
+     "lastDate": "2021-02-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "502676",
+   "name": "Giorgi Mamardashvili",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "FC Gagra",
+     "role": "academy",
+     "years": "2010-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dinamo Tbilisi",
+     "role": "both",
+     "years": "2012-2018",
+     "firstDate": "2018-01-01",
+     "lastDate": "2021-12-31"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-27",
+     "lastDate": "2025-06-30"
+    },
+    {
+     "club": "Valencia",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2024-08-28"
+    },
+    {
+     "club": "FC Locomotive",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-01",
+     "lastDate": "2020-01-01"
+    },
+    {
+     "club": "Rustavi",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-01",
+     "lastDate": "2019-01-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "105470",
+   "name": "Alisson",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "SC Internacional",
+     "role": "academy",
+     "years": "2002-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-19",
+     "lastDate": "2018-07-19"
+    },
+    {
+     "club": "Roma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-06",
+     "lastDate": "2016-07-06"
+    },
+    {
+     "club": "Internacional",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-01-01",
+     "lastDate": "2013-01-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "486604",
+   "name": "Vitezslav Jaros",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "1.FK Příbram",
+     "role": "academy",
+     "years": "2008-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SK Slavia Praha",
+     "role": "academy",
+     "years": "2011-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "both",
+     "years": "2017-2019",
+     "firstDate": "2017-07-01",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Sturm Graz",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-09",
+     "lastDate": "2024-01-09"
+    },
+    {
+     "club": "Stockport",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-04",
+     "lastDate": "2022-07-04"
+    },
+    {
+     "club": "Notts County",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-27",
+     "lastDate": "2022-01-27"
+    },
+    {
+     "club": "St. Pat's",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-02-03",
+     "lastDate": "2021-02-03"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "226049",
+   "name": "Freddie Woodman",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Crystal Palace",
+     "role": "academy",
+     "years": "2002-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Preston",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2022-05-31"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-31",
+     "lastDate": "2022-01-31"
+    },
+    {
+     "club": "Swansea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-01",
+     "lastDate": "2020-08-16"
+    },
+    {
+     "club": "Aberdeen FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-31",
+     "lastDate": "2018-01-31"
+    },
+    {
+     "club": "Kilmarnock FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-09",
+     "lastDate": "2017-01-09"
+    },
+    {
+     "club": "Crawley Town",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-07-29",
+     "lastDate": "2015-07-29"
+    },
+    {
+     "club": "Hartlepool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-09-16",
+     "lastDate": "2014-09-16"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "706815",
+   "name": "Harvey Davies",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Liverpool",
+     "role": "both",
+     "years": "2012-2021",
+     "firstDate": "2020-07-01",
+     "lastDate": "2026-02-02"
+    },
+    {
+     "club": "Crawley Town",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Crewe Alexandra",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "1004301",
+   "name": "Jérémy Jacquet",
+   "position": "Centre-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "AS Outre Mer du Bois l'Abbé",
+     "role": "academy",
+     "years": "2011-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Joinville RC",
+     "role": "academy",
+     "years": "2013-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Stade Rennais FC",
+     "role": "academy",
+     "years": "2019-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Stade Rennais",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-01",
+     "lastDate": "2025-02-03"
+    },
+    {
+     "club": "Clermont Foot",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-01-29",
+     "lastDate": "2024-01-29"
+    },
+    {
+     "club": "Rennes Jugend",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "1086619",
+   "name": "Giovanni Leoni",
+   "position": "Centre-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Vigontina San Paolo",
+     "role": "academy",
+     "years": "2010-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AS Cittadella",
+     "role": "academy",
+     "years": "2015-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Calcio Padova",
+     "role": "academy",
+     "years": "2019-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-15",
+     "lastDate": "2025-08-15"
+    },
+    {
+     "club": "Parma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-27",
+     "lastDate": "2024-08-27"
+    },
+    {
+     "club": "Sampdoria",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-02-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Padova",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2024-06-30"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "480267",
+   "name": "Ronald Araujo",
+   "position": "Centre-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Huracán de Rivera",
+     "role": "academy",
+     "years": "2010-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Rentistas",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Boston River",
+     "role": "both",
+     "years": "2016-2018",
+     "firstDate": "2017-07-28",
+     "lastDate": "2017-07-28"
+    },
+    {
+     "club": "Barcelona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-05",
+     "lastDate": "2027-06-30"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-10",
+     "lastDate": "2026-08-10"
+    },
+    {
+     "club": "Rentistas",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "139208",
+   "name": "Virgil van Dijk",
+   "position": "Centre-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "WDS '19 Breda",
+     "role": "academy",
+     "years": "1997-2001",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-01",
+     "lastDate": "2018-01-01"
+    },
+    {
+     "club": "Southampton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-09-01",
+     "lastDate": "2015-09-01"
+    },
+    {
+     "club": "Celtic",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2013-07-01"
+    },
+    {
+     "club": "FC Groningen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-07-01",
+     "lastDate": "2011-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "256178",
+   "name": "Joe Gomez",
+   "position": "Centre-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Marvels Lane",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ten-Em-Bee",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Charlton Athletic (2007–2014)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-07-01",
+     "lastDate": "2015-07-01"
+    },
+    {
+     "club": "Charlton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "730861",
+   "name": "Milos Kerkez",
+   "position": "Left-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "OFK Vrbas",
+     "role": "academy",
+     "years": "2010-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FK Hajduk Kula",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "SK Rapid Wien",
+     "role": "academy",
+     "years": "2014-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Hódmezövásárhely FC",
+     "role": "academy",
+     "years": "2019-",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "ETO FC Győr",
+     "role": "academy",
+     "years": "2019-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AC Milan",
+     "role": "academy",
+     "years": "2021-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-20",
+     "lastDate": "2023-07-20"
+    },
+    {
+     "club": "AZ Alkmaar",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-29",
+     "lastDate": "2022-01-29"
+    },
+    {
+     "club": "ETO FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-01",
+     "lastDate": "2020-09-01"
+    },
+    {
+     "club": "Hódmez. Jgd",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-05-08",
+     "lastDate": "2019-05-08"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "338070",
+   "name": "Konstantinos Tsimikas",
+   "position": "Left-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Neapoli Thessaloniki",
+     "role": "academy",
+     "years": "2010-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Panserraikos",
+     "role": "academy",
+     "years": "2011-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Olympiacos Piraeus",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-10",
+     "lastDate": "2026-06-30"
+    },
+    {
+     "club": "Roma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-31",
+     "lastDate": "2025-08-31"
+    },
+    {
+     "club": "Olympiacos",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-07-01",
+     "lastDate": "2018-06-30"
+    },
+    {
+     "club": "Esbjerg fB",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-01",
+     "lastDate": "2017-01-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "484547",
+   "name": "Jeremie Frimpong",
+   "position": "Right-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "AFC Clayton",
+     "role": "academy",
+     "years": "2008-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Clayton Villa",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City (2010–2019)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Leverkusen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-27",
+     "lastDate": "2021-01-27"
+    },
+    {
+     "club": "Celtic",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-09-02",
+     "lastDate": "2019-09-02"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "624258",
+   "name": "Conor Bradley",
+   "position": "Right-Back",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "St. Patrick's FC",
+     "role": "academy",
+     "years": "2012-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dungannon Swifts FC",
+     "role": "academy",
+     "years": "2016-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "both",
+     "years": "2019-2020",
+     "firstDate": "2019-09-03",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Bolton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "478573",
+   "name": "Ryan Gravenberch",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "AVV Zeeburgia",
+     "role": "academy",
+     "years": "2009-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "role": "academy",
+     "years": "2010-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-09-01",
+     "lastDate": "2023-09-01"
+    },
+    {
+     "club": "Bayern Munich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-09-12",
+     "lastDate": "2019-09-12"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "146310",
+   "name": "Wataru Endo",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Yokohama South Totsuka SC",
+     "role": "academy",
+     "years": "1999-2004",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Yokohama South Totsuka Jr HS",
+     "role": "academy",
+     "years": "2005-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-18",
+     "lastDate": "2023-08-18"
+    },
+    {
+     "club": "Stuttgart",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-13",
+     "lastDate": "2020-07-01"
+    },
+    {
+     "club": "Sint-Truiden",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-21",
+     "lastDate": "2020-06-30"
+    },
+    {
+     "club": "Urawa Reds",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-01-06",
+     "lastDate": "2016-01-06"
+    },
+    {
+     "club": "Shonan Bellmare",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2011-02-01",
+     "lastDate": "2011-02-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "534033",
+   "name": "Alexis Mac Allister",
+   "position": "Central Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Club Social Parque",
+     "role": "academy",
+     "years": "2004-2011",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AA Argentinos Juniors",
+     "role": "academy",
+     "years": "2011-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-24",
+     "lastDate": "2020-01-31"
+    },
+    {
+     "club": "Boca Juniors",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Argentinos Jrs.",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2019-01-25"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "1045123",
+   "name": "Trey Nyoni",
+   "position": "Central Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Leicester City",
+     "role": "academy",
+     "years": "2013-2023",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "both",
+     "years": "2023-2025",
+     "firstDate": "2023-08-23",
+     "lastDate": "2025-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "598577",
+   "name": "Florian Wirtz",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "SV Grün-Weiss Brauweiler",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "1.FC Köln",
+     "role": "academy",
+     "years": "2010-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Bayer 04 Leverkusen",
+     "role": "academy",
+     "years": "2020-",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Leverkusen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-01",
+     "lastDate": "2020-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "451276",
+   "name": "Dominik Szoboszlai",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Videoton",
+     "role": "academy",
+     "years": "2006-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Főnix-GOLD",
+     "role": "academy",
+     "years": "2007-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "MTK Budapest",
+     "role": "academy",
+     "years": "2015-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liefering",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-02",
+     "lastDate": "2023-07-02"
+    },
+    {
+     "club": "Leipzig",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-01",
+     "lastDate": "2021-01-01"
+    },
+    {
+     "club": "Salzburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-16",
+     "lastDate": "2018-01-16"
+    },
+    {
+     "club": "FC Liefering",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Főnix Jgd",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2007-11-30",
+     "lastDate": "2007-11-30"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "708265",
+   "name": "Bradley Barcola",
+   "position": "Left Winger",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "AS Buers-Villeurbanne",
+     "role": "academy",
+     "years": "2008-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Olympique Lyonnais",
+     "role": "academy",
+     "years": "2010-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-31",
+     "lastDate": "2026-08-31"
+    },
+    {
+     "club": "PSG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-31",
+     "lastDate": "2023-08-31"
+    },
+    {
+     "club": "Lyon",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-07",
+     "lastDate": "2022-01-07"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "434675",
+   "name": "Cody Gakpo",
+   "position": "Left Winger",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "EVV Eindhoven",
+     "role": "academy",
+     "years": "2006-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "PSV Eindhoven",
+     "role": "academy",
+     "years": "2007-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-01",
+     "lastDate": "2023-01-01"
+    },
+    {
+     "club": "PSV",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "935231",
+   "name": "Víctor Muñoz",
+   "position": "Left Winger",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "CE San Gabriel",
+     "role": "academy",
+     "years": "2012-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Barcelona",
+     "role": "academy",
+     "years": "2014-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CF Damm",
+     "role": "academy",
+     "years": "2017-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Real Madrid",
+     "role": "both",
+     "years": "2021-2023",
+     "firstDate": "2025-07-01",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "CA Osasuna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-11",
+     "lastDate": "2025-07-11"
+    },
+    {
+     "club": "RM Castilla",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "RSC Inter FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "1108466",
+   "name": "Rio Ngumoha",
+   "position": "Left Winger",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Chelsea",
+     "role": "academy",
+     "years": "2016-2024",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "both",
+     "years": "2024-2025",
+     "firstDate": "2024-09-04",
+     "lastDate": "2025-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "341092",
+   "name": "Federico Chiesa",
+   "position": "Right Winger",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Settignanese",
+     "role": "academy",
+     "years": "2002-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Fiorentina",
+     "role": "both",
+     "years": "2007-2016",
+     "firstDate": "2016-07-01",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-29",
+     "lastDate": "2024-08-29"
+    },
+    {
+     "club": "Juventus",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-05",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "349066",
+   "name": "Alexander Isak",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "AIK",
+     "role": "both",
+     "years": "2005-2016",
+     "firstDate": "2016-05-03",
+     "lastDate": "2016-05-03"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-09-01",
+     "lastDate": "2025-09-01"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-26",
+     "lastDate": "2022-08-26"
+    },
+    {
+     "club": "Real Sociedad",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Dortmund",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-01-23",
+     "lastDate": "2019-06-30"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "709726",
+   "name": "Hugo Ekitiké",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 31,
+    "name": "Liverpool"
+   },
+   "involvements": [
+    {
+     "club": "Cormontreuil FC",
+     "role": "academy",
+     "years": "2008-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Stade de Reims",
+     "role": "academy",
+     "years": "2013-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-23",
+     "lastDate": "2025-07-23"
+    },
+    {
+     "club": "Frankfurt",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-02-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "PSG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-16",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "Stade Reims",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Vejle BK",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-29",
+     "lastDate": "2021-01-29"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "725912",
+   "name": "Antonín Kinský",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "FC Tempo Praha",
+     "role": "academy",
+     "years": "2009-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Bohemians Praha 1905",
+     "role": "academy",
+     "years": "2017-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FK Dukla Praha",
+     "role": "academy",
+     "years": "2018-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-05",
+     "lastDate": "2025-01-05"
+    },
+    {
+     "club": "Slavia Prague",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-28",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "Pardubice",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-19",
+     "lastDate": "2023-07-19"
+    },
+    {
+     "club": "MFK Vyskov",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-02-01",
+     "lastDate": "2022-02-01"
+    },
+    {
+     "club": "Dukla Prague",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-01",
+     "lastDate": "2021-01-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "74960",
+   "name": "Martin Dúbravka",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "MŠK Žilina",
+     "role": "academy",
+     "years": "1994-2007",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Burnley",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-07",
+     "lastDate": "2025-08-07"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-31",
+     "lastDate": "2023-01-01"
+    },
+    {
+     "club": "Manchester United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-09-01",
+     "lastDate": "2022-09-01"
+    },
+    {
+     "club": "Sparta Prague",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2018-06-30"
+    },
+    {
+     "club": "Slovan Liberec",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-27",
+     "lastDate": "2016-07-27"
+    },
+    {
+     "club": "Esbjerg fB",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-01-30",
+     "lastDate": "2014-01-30"
+    },
+    {
+     "club": "MSK Zilina",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2007-07-01",
+     "lastDate": "2007-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "428016",
+   "name": "Brandon Austin",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Chelsea FC (-2007)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "both",
+     "years": "2007-2019",
+     "firstDate": "2021-08-01",
+     "lastDate": "2021-08-01"
+    },
+    {
+     "club": "Orlando",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-22",
+     "lastDate": "2021-01-22"
+    },
+    {
+     "club": "Viborg FF",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-27",
+     "lastDate": "2020-01-27"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "576314",
+   "name": "Jan Paul van Hecke",
+   "position": "Centre-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "JVOZ",
+     "role": "academy",
+     "years": "2013-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "VV Goes",
+     "role": "academy",
+     "years": "2017-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "NAC Breda",
+     "role": "both",
+     "years": "2018-2019",
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-10",
+     "lastDate": "2022-05-31"
+    },
+    {
+     "club": "Blackburn",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-29",
+     "lastDate": "2021-08-29"
+    },
+    {
+     "club": "Heerenveen",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-18",
+     "lastDate": "2020-09-18"
+    },
+    {
+     "club": "GOES",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "557459",
+   "name": "Micky van de Ven",
+   "position": "Centre-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "WSV '30 Wormer",
+     "role": "academy",
+     "years": "2011-2013",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Volendam",
+     "role": "both",
+     "years": "2013-2019",
+     "firstDate": "2019-07-01",
+     "lastDate": "2019-07-01"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-08",
+     "lastDate": "2023-08-08"
+    },
+    {
+     "club": "Wolfsburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-31",
+     "lastDate": "2021-08-31"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "469781",
+   "name": "Marcos Senesi",
+   "position": "Centre-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Club Salto Grande",
+     "role": "academy",
+     "years": "2002-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA San Lorenzo de Almagro",
+     "role": "academy",
+     "years": "2009-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-08",
+     "lastDate": "2022-08-08"
+    },
+    {
+     "club": "Feyenoord",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-09-02",
+     "lastDate": "2019-09-02"
+    },
+    {
+     "club": "San Lorenzo",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "258878",
+   "name": "Tosin Adarabioyo",
+   "position": "Centre-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Chorlton Sports",
+     "role": "academy",
+     "years": "2001-2002",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Hough End Griffins",
+     "role": "academy",
+     "years": "2002-2003",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "academy",
+     "years": "2003-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-09-01",
+     "lastDate": "2026-09-01"
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Fulham",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-10-05",
+     "lastDate": "2020-10-05"
+    },
+    {
+     "club": "Blackburn",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-31",
+     "lastDate": "2019-07-31"
+    },
+    {
+     "club": "West Brom",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-03",
+     "lastDate": "2018-08-03"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "192765",
+   "name": "Ben Davies",
+   "position": "Centre-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Swansea City",
+     "role": "academy",
+     "years": "2004-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Viborg FF",
+     "role": "academy",
+     "years": "2001-2004",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-23",
+     "lastDate": "2014-07-23"
+    },
+    {
+     "club": "Swansea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-07-01",
+     "lastDate": "2012-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "556385",
+   "name": "Destiny Udogie",
+   "position": "Left-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Nogara Calcio (2006-12)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-08-16",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Udinese",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-15",
+     "lastDate": "2022-08-16"
+    },
+    {
+     "club": "Hellas Verona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-01",
+     "lastDate": "2022-06-30"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "234803",
+   "name": "Andrew Robertson",
+   "position": "Left-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Celtic FC (2003–2009)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Queen's Park FC (2009–2012)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-21",
+     "lastDate": "2017-07-21"
+    },
+    {
+     "club": "Hull City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2014-07-29",
+     "lastDate": "2014-07-29"
+    },
+    {
+     "club": "Dundee United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2013-07-01",
+     "lastDate": "2013-07-01"
+    },
+    {
+     "club": "Queen's Park",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2012-07-01",
+     "lastDate": "2012-07-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "553875",
+   "name": "Pedro Porro",
+   "position": "Right-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Gimnástico Don Benito (2008–2015)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Rayo Vallecano",
+     "role": "academy",
+     "years": "2015-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Girona FC",
+     "role": "academy",
+     "years": "2017-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-31",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-15",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-08",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "Real Valladolid",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-12",
+     "lastDate": "2019-08-12"
+    },
+    {
+     "club": "Girona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-01",
+     "lastDate": "2018-08-01"
+    },
+    {
+     "club": "CF Peralada",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-12-01",
+     "lastDate": "2017-12-01"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "922693",
+   "name": "Archie Gray",
+   "position": "Right-Back",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Leeds United",
+     "role": "both",
+     "years": "2014-2023",
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-02",
+     "lastDate": "2024-07-02"
+    }
+   ],
+   "group": "DF"
+  },
+  {
+   "id": "397033",
+   "name": "Sandro Tonali",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Lombardia Uno",
+     "role": "academy",
+     "years": "2007-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Piacenza Calcio",
+     "role": "academy",
+     "years": "2009-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Brescia Calcio",
+     "role": "academy",
+     "years": "2012-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-06",
+     "lastDate": "2026-07-06"
+    },
+    {
+     "club": "Newcastle United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-03",
+     "lastDate": "2023-07-03"
+    },
+    {
+     "club": "AC Milan",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-09",
+     "lastDate": "2021-07-08"
+    },
+    {
+     "club": "Brescia",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-01-01",
+     "lastDate": "2021-06-30"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "354362",
+   "name": "Rodrigo Bentancur",
+   "position": "Defensive Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Club Lucerna",
+     "role": "academy",
+     "years": "2001-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Club Artesano",
+     "role": "academy",
+     "years": "2008-2009",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "CA Boca Juniors",
+     "role": "academy",
+     "years": "2009-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-31",
+     "lastDate": "2022-01-31"
+    },
+    {
+     "club": "Juventus",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    },
+    {
+     "club": "Boca Juniors",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-01-03",
+     "lastDate": "2015-01-03"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "880245",
+   "name": "Mateus Fernandes",
+   "position": "Central Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "SC Olhanense",
+     "role": "academy",
+     "years": "2009-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Sporting CP",
+     "role": "academy",
+     "years": "2016-2021",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-07-02",
+     "lastDate": "2026-07-02"
+    },
+    {
+     "club": "West Ham United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-29",
+     "lastDate": "2025-08-29"
+    },
+    {
+     "club": "Southampton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-20",
+     "lastDate": "2024-08-20"
+    },
+    {
+     "club": "Sporting",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "Estoril",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-29",
+     "lastDate": "2023-08-29"
+    },
+    {
+     "club": "Sporting Sub-15",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "866246",
+   "name": "Lucas Bergvall",
+   "position": "Central Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "IF Brommapojkarna",
+     "role": "academy",
+     "years": "2013-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-01",
+     "lastDate": "2024-07-01"
+    },
+    {
+     "club": "Djurgården",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-02-01",
+     "lastDate": "2023-02-01"
+    },
+    {
+     "club": "Brommapojkarna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-15",
+     "lastDate": "2022-07-15"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "488362",
+   "name": "Conor Gallagher",
+   "position": "Central Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Epsom Eagles",
+     "role": "academy",
+     "years": "2007-2008",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea FC (2008–2019)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-01-14",
+     "lastDate": "2026-01-14"
+    },
+    {
+     "club": "Atlético",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-21",
+     "lastDate": "2024-08-21"
+    },
+    {
+     "club": "Chelsea",
+     "role": "both",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Crystal Palace",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-07-30",
+     "lastDate": "2021-07-30"
+    },
+    {
+     "club": "West Brom",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-09-17",
+     "lastDate": "2020-09-17"
+    },
+    {
+     "club": "Swansea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-15",
+     "lastDate": "2020-01-15"
+    },
+    {
+     "club": "Charlton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-08-02",
+     "lastDate": "2019-08-02"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "566931",
+   "name": "Xavi Simons",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "CD Tháder",
+     "role": "academy",
+     "years": "2006-2010",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "FC Barcelona",
+     "role": "academy",
+     "years": "2010-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "role": "academy",
+     "years": "2019-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-08-29",
+     "lastDate": "2025-08-29"
+    },
+    {
+     "club": "Leipzig",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-19",
+     "lastDate": "2025-01-30"
+    },
+    {
+     "club": "PSG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-01",
+     "lastDate": "2025-01-29"
+    },
+    {
+     "club": "PSV",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "294057",
+   "name": "James Maddison",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Wyken Boys FC",
+     "role": "academy",
+     "years": "2003-2005",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Coventry City",
+     "role": "both",
+     "years": "2005-2014",
+     "firstDate": "2014-07-01",
+     "lastDate": "2016-02-02"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Leicester",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-01",
+     "lastDate": "2018-07-01"
+    },
+    {
+     "club": "Norwich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-02-01",
+     "lastDate": "2017-01-02"
+    },
+    {
+     "club": "Aberdeen FC",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-08-31",
+     "lastDate": "2016-08-31"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "431755",
+   "name": "Dejan Kulusevski",
+   "position": "Attacking Midfield",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "IF Brommapojkarna (2006–2016)",
+     "role": "academy",
+     "years": null,
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Atalanta BC",
+     "role": "academy",
+     "years": "2016-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-01-31",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Juventus",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-01-02",
+     "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Parma",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-07-18",
+     "lastDate": "2020-01-02"
+    },
+    {
+     "club": "Atalanta",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-01",
+     "lastDate": "2020-01-01"
+    }
+   ],
+   "group": "MF"
+  },
+  {
+   "id": "743591",
+   "name": "Sávio",
+   "position": "Left Winger",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Atlético Mineiro",
+     "role": "academy",
+     "years": "2015-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-25",
+     "lastDate": "2026-08-25"
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-07-18",
+     "lastDate": "2024-07-18"
+    },
+    {
+     "club": "Troyes",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-06",
+     "lastDate": "2024-06-30"
+    },
+    {
+     "club": "Girona",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-13",
+     "lastDate": "2023-07-13"
+    },
+    {
+     "club": "PSV",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-22",
+     "lastDate": "2022-07-22"
+    },
+    {
+     "club": "Atlético-MG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-03",
+     "lastDate": "2020-08-03"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "801734",
+   "name": "Mathys Tel",
+   "position": "Left Winger",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "JS Villiers-le-Bel",
+     "role": "academy",
+     "years": "2012-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Paris FC",
+     "role": "academy",
+     "years": "2016-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "AS Jeunesse Aubervilliers",
+     "role": "academy",
+     "years": "2017-2019",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Montrouge FC 92",
+     "role": "academy",
+     "years": "2019-2020",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Stade Rennais",
+     "role": "both",
+     "years": "2020-2021",
+     "firstDate": "2021-07-01",
+     "lastDate": "2021-07-01"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-02-03",
+     "lastDate": "2025-07-01"
+    },
+    {
+     "club": "Bayern Munich",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-26",
+     "lastDate": "2025-06-30"
+    },
+    {
+     "club": "ASJA Jugend",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-01",
+     "lastDate": "2017-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "743498",
+   "name": "Wilson Odobert",
+   "position": "Left Winger",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "USF Trilport",
+     "role": "academy",
+     "years": "2010-2017",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "role": "academy",
+     "years": "2017-2022",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-16",
+     "lastDate": "2024-08-16"
+    },
+    {
+     "club": "Burnley",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-12",
+     "lastDate": "2023-08-12"
+    },
+    {
+     "club": "Troyes",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-15",
+     "lastDate": "2022-07-15"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "537860",
+   "name": "Mykhaylo Mudryk",
+   "position": "Left Winger",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Metalist Kharkiv",
+     "role": "academy",
+     "years": "2010-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Dnipro",
+     "role": "academy",
+     "years": "2014-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Shakhtar",
+     "role": "academy",
+     "years": "2016-2018",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Chelsea",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-01-15",
+     "lastDate": "2027-06-30"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-09-01",
+     "lastDate": "2026-09-01"
+    },
+    {
+     "club": "Shakhtar D.",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-09",
+     "lastDate": "2021-01-09"
+    },
+    {
+     "club": "Desna",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-08-06",
+     "lastDate": "2020-08-06"
+    },
+    {
+     "club": "Arsenal Kyiv",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-03-01",
+     "lastDate": "2019-03-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "543499",
+   "name": "Mohammed Kudus",
+   "position": "Right Winger",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Strong Tower FC",
+     "role": "academy",
+     "years": "2010-2012",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-07-10",
+     "lastDate": "2025-07-10"
+    },
+    {
+     "club": "West Ham United",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-08-27",
+     "lastDate": "2023-08-27"
+    },
+    {
+     "club": "Ajax",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-31",
+     "lastDate": "2020-07-31"
+    },
+    {
+     "club": "Nordsjaelland",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-08-02",
+     "lastDate": "2018-08-02"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "445939",
+   "name": "Omar Marmoush",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Wadi Degla FC",
+     "role": "academy",
+     "years": "2005-2016",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Manchester City",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2025-01-23",
+     "lastDate": "2027-06-30"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2026-08-27",
+     "lastDate": "2026-08-27"
+    },
+    {
+     "club": "Frankfurt",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-07-01",
+     "lastDate": "2023-07-01"
+    },
+    {
+     "club": "Wolfsburg",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2020-07-01",
+     "lastDate": "2022-06-30"
+    },
+    {
+     "club": "Stuttgart",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-08-30",
+     "lastDate": "2021-08-30"
+    },
+    {
+     "club": "St. Pauli",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2021-01-05",
+     "lastDate": "2021-01-05"
+    },
+    {
+     "club": "Wadi Degla",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "258889",
+   "name": "Dominic Solanke",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Chelsea",
+     "role": "academy",
+     "years": "2004-2014",
+     "firstDate": "2014-07-01",
+     "lastDate": "2016-06-30"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-10",
+     "lastDate": "2024-08-10"
+    },
+    {
+     "club": "Bournemouth",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2019-01-04",
+     "lastDate": "2019-01-04"
+    },
+    {
+     "club": "Liverpool",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-07-10",
+     "lastDate": "2017-07-10"
+    },
+    {
+     "club": "Vitesse",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-08-04",
+     "lastDate": "2015-08-04"
+    }
+   ],
+   "group": "FW"
+  },
+  {
+   "id": "378710",
+   "name": "Richarlison",
+   "position": "Centre-Forward",
+   "club": {
+    "id": 148,
+    "name": "Tottenham Hotspur"
+   },
+   "involvements": [
+    {
+     "club": "Real Noroeste",
+     "role": "academy",
+     "years": "2013-2014",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "América Futebol Clube",
+     "role": "academy",
+     "years": "2014-2015",
+     "firstDate": null,
+     "lastDate": null
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2022-07-01",
+     "lastDate": "2022-07-01"
+    },
+    {
+     "club": "Everton",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2018-07-24",
+     "lastDate": "2018-07-24"
+    },
+    {
+     "club": "Watford",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2017-08-08",
+     "lastDate": "2017-08-08"
+    },
+    {
+     "club": "Fluminense",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2016-01-01",
+     "lastDate": "2016-01-01"
+    },
+    {
+     "club": "América-MG",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2015-05-01",
+     "lastDate": "2015-05-01"
+    }
+   ],
+   "group": "FW"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PL Connections — Premier League club alumni tracker</title>
+<meta name="description" content="Which current Premier League players have history — first team or academy — with each club. Data: Transfermarkt (26/27 season snapshot).">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+<header>
+  <h1>PL Connections</h1>
+  <p class="sub">Current Premier League players and the clubs they've been part of — <b>first team or academy</b>.</p>
+  <p class="meta" id="meta"></p>
+</header>
+
+<main>
+  <section id="club-picker" aria-label="Pick a club">
+    <h2>Pick a club to see who's connected to it</h2>
+    <div id="club-chips" class="chips"></div>
+  </section>
+
+  <section id="results" hidden>
+    <div class="summary" id="summary"></div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search players…" autocomplete="off">
+      <div id="pos-chips" class="chips small"></div>
+    </div>
+    <table id="table">
+      <thead><tr>
+        <th>Player</th><th>Pos</th><th>Now at</th><th>Connection</th><th>Years</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <p id="empty" class="empty" hidden>No players match.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <ul>
+      <li>Rosters = first-team squads of the <b id="season-label">26/27</b> Premier League on Transfermarkt (snapshot taken at crawl time, post-deadline-day).</li>
+      <li><b>First team</b> = played a senior match (or was in the senior squad) for the club. <b>Academy</b> = youth-club affiliation (from Transfermarkt's "Youth clubs" record) or youth-level move.</li>
+      <li>This is an experimental dataset built for personal use; verify before publishing anything.</li>
+    </ul>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
