@@ -18,7 +18,10 @@
 <main>
   <section id="club-picker" aria-label="Pick a club">
     <h2>Pick a club to see who's connected to it</h2>
-    <div id="club-chips" class="chips"></div>
+    <label class="sr-only" for="club-select">Club</label>
+    <select id="club-select" aria-label="Pick a club">
+      <option value="">Pick a club…</option>
+    </select>
   </section>
 
   <section id="results" hidden>

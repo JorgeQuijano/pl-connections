@@ -18,20 +18,20 @@ async function init() {
   const season = (data.meta && data.meta.season) || '26/27';
   document.getElementById('season-label').textContent = season;
   $('meta').textContent = `${state.players.length} players · ${state.clubs.length} clubs crawled · snapshot ${(data.meta && data.meta.crawledAt || '').slice(0, 10)} · source: Transfermarkt`;
+  $('club-select').onchange = (e) => selectClub(e.target.value ? Number(e.target.value) : null);
   renderClubs();
 }
 
 function renderClubs() {
-  const wrap = $('club-chips');
-  wrap.innerHTML = '';
+  const sel = $('club-select');
+  sel.innerHTML = '<option value="">Pick a club…</option>';
   for (const c of state.clubs) {
-    const b = document.createElement('button');
-    b.className = 'chip' + (state.selected === c.id ? ' on' : '');
-    b.textContent = c.name;
-    b.title = `${c.name} — ${c.squadSize} players in squad`;
-    b.onclick = () => selectClub(c.id);
-    wrap.appendChild(b);
+    const o = document.createElement('option');
+    o.value = c.id;
+    o.textContent = `${c.name} (${c.squadSize})`;
+    sel.appendChild(o);
   }
+  sel.value = state.selected === null ? '' : String(state.selected);
 }
 
 function selectClub(id) {
@@ -109,11 +109,11 @@ function renderResults() {
     tr.className = 'exp';
     const here = p.club.name === club.name;
     tr.innerHTML = `
-      <td class="name"><button class="expand">${p.name}</button></td>
-      <td><span class="pos">${p.group || '?'}</span></td>
-      <td>${p.club.name}${here ? ' <span class="dot" title="current squad">●</span>' : ''}</td>
-      <td><span class="tag ${inv.role === 'senior' ? 'ft' : inv.role === 'academy' ? 'ac' : 'bo'}">${ROLE_LABEL[inv.role]}</span></td>
-      <td class="mono">${invYears(inv)}</td>`;
+      <td data-label="Player"><button class="expand">${p.name}</button></td>
+      <td data-label="Pos"><span class="pos">${p.group || '?'}</span></td>
+      <td data-label="Now at">${p.club.name}${here ? ' <span class="dot" title="current squad">●</span>' : ''}</td>
+      <td data-label="Connection"><span class="tag ${inv.role === 'senior' ? 'ft' : inv.role === 'academy' ? 'ac' : 'bo'}">${ROLE_LABEL[inv.role]}</span></td>
+      <td data-label="Years" class="mono">${invYears(inv)}</td>`;
     tr.querySelector('.expand').onclick = () => toggleDetail(tr, p);
     tbody.appendChild(tr);
   }
