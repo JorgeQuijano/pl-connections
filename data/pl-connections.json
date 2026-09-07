@@ -1,7 +1,7 @@
 {
  "meta": {
   "season": "2026/2027",
-  "crawledAt": "2026-09-06T01:51:56.603060+00:00",
+  "crawledAt": "2026-09-07T01:53:44.196552+00:00",
   "source": "transfermarkt.com",
   "clubs": [
    {
@@ -42,7 +42,7 @@
    {
     "id": 405,
     "name": "Aston Villa",
-    "squadSize": 27
+    "squadSize": 28
    },
    {
     "id": 631,
@@ -211,7 +211,7 @@
    },
    "involvements": [
     {
-     "club": "Athletic Bilbao (2004–2012)",
+     "club": "Athletic Bilbao",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -591,7 +591,7 @@
    },
    "involvements": [
     {
-     "club": "Petriana Calcio (2008-10)",
+     "club": "Petriana Calcio",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -718,11 +718,11 @@
      "lastDate": null
     },
     {
-     "club": "Brighton & Hove Albion FC",
-     "role": "academy",
+     "club": "Brighton & Hove Albion",
+     "role": "both",
      "years": "2014-2016",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2014-07-01",
+     "lastDate": "2020-07-31"
     },
     {
      "club": "Arsenal",
@@ -730,13 +730,6 @@
      "years": null,
      "firstDate": "2021-07-30",
      "lastDate": "2021-07-30"
-    },
-    {
-     "club": "Brighton & Hove Albion",
-     "role": "both",
-     "years": null,
-     "firstDate": "2014-07-01",
-     "lastDate": "2020-07-31"
     },
     {
      "club": "Leeds United",
@@ -913,7 +906,7 @@
    },
    "involvements": [
     {
-     "club": "CD Amigó (-2006)",
+     "club": "CD Amigó",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -974,7 +967,7 @@
      "lastDate": null
     },
     {
-     "club": "Strømsgodset IF (2009–2013)",
+     "club": "Strømsgodset IF",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -1232,7 +1225,7 @@
    },
    "involvements": [
     {
-     "club": "King George FC (-2011)",
+     "club": "King George FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -1455,11 +1448,11 @@
      "lastDate": null
     },
     {
-     "club": "Sunderland AFC",
-     "role": "academy",
+     "club": "Sunderland",
+     "role": "both",
      "years": "2002-2011",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2012-05-31",
+     "lastDate": "2016-01-01"
     },
     {
      "club": "Everton",
@@ -1467,13 +1460,6 @@
      "years": null,
      "firstDate": "2017-07-01",
      "lastDate": "2017-07-01"
-    },
-    {
-     "club": "Sunderland",
-     "role": "both",
-     "years": null,
-     "firstDate": "2012-05-31",
-     "lastDate": "2016-01-01"
     },
     {
      "club": "Preston",
@@ -1708,11 +1694,11 @@
    },
    "involvements": [
     {
-     "club": "Carlisle United (2003–2019)",
-     "role": "academy",
+     "club": "Carlisle United",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2019-02-26",
+     "lastDate": "2019-02-26"
     },
     {
      "club": "Everton",
@@ -1734,13 +1720,6 @@
      "years": null,
      "firstDate": "2021-01-14",
      "lastDate": "2021-01-14"
-    },
-    {
-     "club": "Carlisle United",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2019-02-26",
-     "lastDate": "2019-02-26"
     }
    ],
    "group": "DF"
@@ -1816,7 +1795,7 @@
      "lastDate": null
     },
     {
-     "club": "Manchester United (2004–2011)",
+     "club": "Manchester United",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -2032,7 +2011,7 @@
      "lastDate": "2022-09-01"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2021-01-30",
@@ -2442,10 +2421,10 @@
    "involvements": [
     {
      "club": "Nottingham Forest",
-     "role": "academy",
+     "role": "both",
      "years": "2009-2019",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2019-07-01",
+     "lastDate": "2021-05-31"
     },
     {
      "club": "Everton",
@@ -2467,13 +2446,6 @@
      "years": null,
      "firstDate": "2023-09-01",
      "lastDate": "2023-09-01"
-    },
-    {
-     "club": "Nott'm Forest",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2019-07-01",
-     "lastDate": "2021-05-31"
     },
     {
      "club": "Lincoln City",
@@ -3152,7 +3124,7 @@
      "lastDate": null
     },
     {
-     "club": "Charlton Athletic (2007–2014)",
+     "club": "Charlton Athletic",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -3349,7 +3321,7 @@
      "lastDate": null
     },
     {
-     "club": "Manchester City (2010–2019)",
+     "club": "Manchester City",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -4211,7 +4183,7 @@
    },
    "involvements": [
     {
-     "club": "Chelsea FC (-2007)",
+     "club": "Chelsea",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -4521,7 +4493,7 @@
    },
    "involvements": [
     {
-     "club": "Nogara Calcio (2006-12)",
+     "club": "Nogara Calcio",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -4561,14 +4533,14 @@
    },
    "involvements": [
     {
-     "club": "Celtic FC (2003–2009)",
+     "club": "Celtic FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Queen's Park FC (2009–2012)",
+     "club": "Queen's Park FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -4622,7 +4594,7 @@
    },
    "involvements": [
     {
-     "club": "Gimnástico Don Benito (2008–2015)",
+     "club": "Gimnástico Don Benito",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -4953,11 +4925,11 @@
      "lastDate": null
     },
     {
-     "club": "Chelsea FC (2008–2019)",
-     "role": "academy",
+     "club": "Chelsea",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2016-07-01",
+     "lastDate": "2022-07-01"
     },
     {
      "club": "Tottenham Hotspur",
@@ -4972,13 +4944,6 @@
      "years": null,
      "firstDate": "2024-08-21",
      "lastDate": "2024-08-21"
-    },
-    {
-     "club": "Chelsea",
-     "role": "both",
-     "years": null,
-     "firstDate": "2016-07-01",
-     "lastDate": "2022-07-01"
     },
     {
      "club": "Crystal Palace",
@@ -5136,7 +5101,7 @@
    },
    "involvements": [
     {
-     "club": "IF Brommapojkarna (2006–2016)",
+     "club": "IF Brommapojkarna",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -5657,7 +5622,7 @@
    },
    "involvements": [
     {
-     "club": "Club Napoli (2003-13)",
+     "club": "Club Napoli",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -5880,7 +5845,7 @@
    },
    "involvements": [
     {
-     "club": "NK Trešnjevka (2009–2010)",
+     "club": "NK Trešnjevka",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -6289,7 +6254,7 @@
      "lastDate": "2026-07-23"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2024-07-01",
@@ -6968,7 +6933,7 @@
    },
    "involvements": [
     {
-     "club": "Southampton FC (-2004)",
+     "club": "Southampton FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -7334,7 +7299,7 @@
    },
    "involvements": [
     {
-     "club": "US Colomiers (09/2012-2014)",
+     "club": "US Colomiers",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -7975,16 +7940,9 @@
      "lastDate": null
     },
     {
-     "club": "Sunderland AFC",
-     "role": "academy",
-     "years": "2015-2022",
-     "firstDate": null,
-     "lastDate": null
-    },
-    {
      "club": "Sunderland",
      "role": "both",
-     "years": null,
+     "years": "2015-2022",
      "firstDate": "2021-07-01",
      "lastDate": "2023-07-01"
     }
@@ -8001,7 +7959,7 @@
    },
    "involvements": [
     {
-     "club": "Eendracht Aalst (-2014)",
+     "club": "Eendracht Aalst",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -8410,7 +8368,7 @@
    },
    "involvements": [
     {
-     "club": "DJK Darching (-2006)",
+     "club": "DJK Darching",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -8701,18 +8659,18 @@
    },
    "involvements": [
     {
-     "club": "FC Greifensee (- 06/2006)",
+     "club": "FC Greifensee",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "FC Zürich (07/2006 - 12/2013)",
-     "role": "academy",
+     "club": "FC Zürich",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2014-01-01",
+     "lastDate": "2014-01-01"
     },
     {
      "club": "Leeds United",
@@ -8727,13 +8685,6 @@
      "years": null,
      "firstDate": "2015-07-01",
      "lastDate": "2015-07-01"
-    },
-    {
-     "club": "FC Zürich",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2014-01-01",
-     "lastDate": "2014-01-01"
     }
    ],
    "group": "DF"
@@ -9166,14 +9117,14 @@
    },
    "involvements": [
     {
-     "club": "Saginuma SC (2001–2006)",
+     "club": "Saginuma SC",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Kawasaki Frontale (2007–2017)",
+     "club": "Kawasaki Frontale",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -9464,14 +9415,14 @@
    },
    "involvements": [
     {
-     "club": "Hull City (2006–2014)",
+     "club": "Hull City",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Swansea City (2014–2016)",
+     "club": "Swansea City",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -9767,6 +9718,32 @@
      "years": null,
      "firstDate": "2011-07-01",
      "lastDate": "2011-07-01"
+    }
+   ],
+   "group": "GK"
+  },
+  {
+   "id": "712181",
+   "name": "James Wright",
+   "position": "Goalkeeper",
+   "club": {
+    "id": 405,
+    "name": "Aston Villa"
+   },
+   "involvements": [
+    {
+     "club": "Aston Villa",
+     "role": "both",
+     "years": null,
+     "firstDate": "2021-07-01",
+     "lastDate": "2026-07-01"
+    },
+    {
+     "club": "Real Unión",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2024-08-16",
+     "lastDate": "2024-08-16"
     }
    ],
    "group": "GK"
@@ -10119,7 +10096,7 @@
    },
    "involvements": [
     {
-     "club": "ASD Zognese (?-2011)",
+     "club": "ASD Zognese",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -10174,10 +10151,10 @@
     },
     {
      "club": "Nottingham Forest",
-     "role": "academy",
+     "role": "both",
      "years": "2014-2016",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2016-07-01",
+     "lastDate": "2016-07-01"
     },
     {
      "club": "Aston Villa",
@@ -10185,13 +10162,6 @@
      "years": null,
      "firstDate": "2020-09-03",
      "lastDate": "2020-09-03"
-    },
-    {
-     "club": "Nott'm Forest",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2016-07-01",
-     "lastDate": "2016-07-01"
     },
     {
      "club": "Dag & Red FC",
@@ -10986,7 +10956,7 @@
    },
    "involvements": [
     {
-     "club": "FC Marisca Mersch (-2020)",
+     "club": "FC Marisca Mersch",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -11688,7 +11658,7 @@
    },
    "involvements": [
     {
-     "club": "GS Assago (2010-14)",
+     "club": "GS Assago",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -12350,7 +12320,7 @@
    },
    "involvements": [
     {
-     "club": "CF Damaiense (2016/17)",
+     "club": "CF Damaiense",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -13173,14 +13143,14 @@
    },
    "involvements": [
     {
-     "club": "Wallsend Boys Club (2015–2016)",
+     "club": "Wallsend Boys Club",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Morecambe FC (2016–2018)",
+     "club": "Morecambe FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -13321,7 +13291,7 @@
    },
    "involvements": [
     {
-     "club": "Real SC (2009/10)",
+     "club": "Real SC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -13457,7 +13427,7 @@
    },
    "involvements": [
     {
-     "club": "CA River Plate (-2015)",
+     "club": "CA River Plate",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -13739,14 +13709,14 @@
    },
    "involvements": [
     {
-     "club": "Fulham FC (-12/2015)",
+     "club": "Fulham",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Tottenham Hotspur (01/2016-2017)",
+     "club": "Tottenham Hotspur",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -13800,11 +13770,11 @@
    },
    "involvements": [
     {
-     "club": "Aston Villa (1/2019-2020)",
-     "role": "academy",
+     "club": "Aston Villa",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2021-07-01",
+     "lastDate": "2024-07-19"
     },
     {
      "club": "Ipswich Town",
@@ -13812,13 +13782,6 @@
      "years": null,
      "firstDate": "2025-01-15",
      "lastDate": "2025-01-15"
-    },
-    {
-     "club": "Aston Villa",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2021-07-01",
-     "lastDate": "2024-07-19"
     },
     {
      "club": "Hull City",
@@ -13854,11 +13817,11 @@
    },
    "involvements": [
     {
-     "club": "Leeds United (2009–2018)",
-     "role": "academy",
+     "club": "Leeds United",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2018-07-01",
+     "lastDate": "2019-07-03"
     },
     {
      "club": "Ipswich Town",
@@ -13894,13 +13857,6 @@
      "years": null,
      "firstDate": "2020-01-16",
      "lastDate": "2020-01-16"
-    },
-    {
-     "club": "Leeds United",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2018-07-01",
-     "lastDate": "2019-07-03"
     }
    ],
    "group": "FW"
@@ -13915,7 +13871,7 @@
    },
    "involvements": [
     {
-     "club": "Yamanashi Gakuin HS (-2015)",
+     "club": "Yamanashi Gakuin HS",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -14030,7 +13986,7 @@
    },
    "involvements": [
     {
-     "club": "Nanset IF (-2019)",
+     "club": "Nanset IF",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -14269,7 +14225,7 @@
      "lastDate": "2015-08-04"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2015-03-26",
@@ -14316,7 +14272,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-08-31",
@@ -14384,7 +14340,7 @@
      "lastDate": "2010-07-01"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2024-02-01",
@@ -14438,7 +14394,7 @@
      "lastDate": null
     },
     {
-     "club": "VfB Stuttgart (-2014)",
+     "club": "VfB Stuttgart",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -14466,7 +14422,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-08-15",
@@ -14562,7 +14518,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-08-31",
@@ -14595,14 +14551,14 @@
      "lastDate": null
     },
     {
-     "club": "Midtjylland (2020-22)",
-     "role": "academy",
+     "club": "Midtjylland",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2022-07-01",
+     "lastDate": "2023-01-30"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-08-11",
@@ -14614,13 +14570,6 @@
      "years": null,
      "firstDate": "2023-01-31",
      "lastDate": "2023-01-31"
-    },
-    {
-     "club": "Midtjylland",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2022-07-01",
-     "lastDate": "2023-01-30"
     },
     {
      "club": "Mafra",
@@ -14663,7 +14612,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2024-07-18",
@@ -14710,7 +14659,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-07-11",
@@ -14757,7 +14706,7 @@
      "lastDate": "2022-05-31"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2022-07-10",
@@ -14797,7 +14746,7 @@
      "lastDate": "2020-07-15"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-02-02",
@@ -14837,7 +14786,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-08-31",
@@ -14884,7 +14833,7 @@
      "lastDate": "2019-06-30"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-07-22",
@@ -14945,7 +14894,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-08-30",
@@ -14985,7 +14934,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-09-01",
@@ -15025,7 +14974,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-09-01",
@@ -15058,14 +15007,14 @@
    },
    "involvements": [
     {
-     "club": "SC St. Valentin (07/2003-)",
+     "club": "SC St. Valentin",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-07-23",
@@ -15112,16 +15061,9 @@
    },
    "involvements": [
     {
-     "club": "Nottingham Forest FC",
-     "role": "academy",
+     "club": "Nottingham Forest",
+     "role": "both",
      "years": "2005-2016",
-     "firstDate": null,
-     "lastDate": null
-    },
-    {
-     "club": "Nott'm Forest",
-     "role": "senior",
-     "years": null,
      "firstDate": "2016-07-01",
      "lastDate": "2018-05-31"
     },
@@ -15180,7 +15122,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2022-08-19",
@@ -15227,7 +15169,7 @@
      "lastDate": "2024-05-31"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-08-16",
@@ -15253,25 +15195,18 @@
    },
    "involvements": [
     {
-     "club": "Chelsea FC (2007–2018)",
-     "role": "academy",
-     "years": null,
-     "firstDate": null,
-     "lastDate": null
-    },
-    {
-     "club": "Nott'm Forest",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2023-09-01",
-     "lastDate": "2023-09-01"
-    },
-    {
      "club": "Chelsea",
      "role": "both",
      "years": null,
      "firstDate": "2016-07-01",
      "lastDate": "2023-06-30"
+    },
+    {
+     "club": "Nottingham Forest",
+     "role": "senior",
+     "years": null,
+     "firstDate": "2023-09-01",
+     "lastDate": "2023-09-01"
     },
     {
      "club": "Leverkusen",
@@ -15328,7 +15263,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-07-31",
@@ -15389,7 +15324,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2026-08-27",
@@ -15450,7 +15385,7 @@
      "lastDate": "2019-01-01"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-07-05",
@@ -15497,7 +15432,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2025-08-18",
@@ -15572,7 +15507,7 @@
      "lastDate": null
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-01-20",
@@ -15715,21 +15650,21 @@
    },
    "involvements": [
     {
-     "club": "ES Manche Atlantique (02/2012-10/2013)",
+     "club": "ES Manche Atlantique",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "GDR Guipavas (10/2013-08/2018)",
+     "club": "GDR Guipavas",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "EA Guingamp (08/2018-12/2021)",
+     "club": "EA Guingamp",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -15926,7 +15861,7 @@
    },
    "involvements": [
     {
-     "club": "TV Kalkum-Wittlaer (2007-09)",
+     "club": "TV Kalkum-Wittlaer",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -16551,7 +16486,7 @@
    },
    "involvements": [
     {
-     "club": "RKAV Volendam (-2016)",
+     "club": "RKAV Volendam",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -16706,7 +16641,7 @@
      "lastDate": "2025-07-11"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-07-25",
@@ -17011,7 +16946,7 @@
      "lastDate": "2023-08-31"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2022-07-02",
@@ -17682,7 +17617,7 @@
    },
    "involvements": [
     {
-     "club": "Beitar Haifa (-2014)",
+     "club": "Beitar Haifa",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -18126,7 +18061,7 @@
      "lastDate": null
     },
     {
-     "club": "Burnley FC (2014–2018)",
+     "club": "Burnley FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -18786,7 +18721,7 @@
    },
    "involvements": [
     {
-     "club": "SC Wieselburg (2007-)",
+     "club": "SC Wieselburg",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -19021,28 +18956,28 @@
    },
    "involvements": [
     {
-     "club": "US SB Waltzing-Bonnert (2002–2004)",
+     "club": "US SB Waltzing-Bonnert",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "FC Lorrain Arlon (2004–2006)",
+     "club": "FC Lorrain Arlon",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Royal Excelsior Virton (2006–2011)",
+     "club": "Royal Excelsior Virton",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "KRC Genk (2011–2014)",
+     "club": "KRC Genk",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -19190,21 +19125,21 @@
    },
    "involvements": [
     {
-     "club": "SoGK Charlo (-12/2014)",
+     "club": "SoGK Charlo",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Ystads IF (01/2015-12/2015)",
+     "club": "Ystads IF",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Malmö FF (01/2016-2022)",
+     "club": "Malmö FF",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -19411,11 +19346,11 @@
    },
    "involvements": [
     {
-     "club": "Arsenal FC (2010–2018)",
-     "role": "academy",
+     "club": "Arsenal",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2016-07-01",
+     "lastDate": "2020-08-01"
     },
     {
      "club": "Fulham",
@@ -19423,13 +19358,6 @@
      "years": null,
      "firstDate": "2024-08-02",
      "lastDate": "2024-08-02"
-    },
-    {
-     "club": "Arsenal",
-     "role": "both",
-     "years": null,
-     "firstDate": "2016-07-01",
-     "lastDate": "2020-08-01"
     },
     {
      "club": "Huddersfield",
@@ -19835,10 +19763,10 @@
     },
     {
      "club": "Nottingham Forest",
-     "role": "academy",
+     "role": "both",
      "years": "2006-2010",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2010-07-01",
+     "lastDate": "2014-08-10"
     },
     {
      "club": "Manchester United",
@@ -19867,13 +19795,6 @@
      "years": null,
      "firstDate": "2023-01-31",
      "lastDate": "2023-01-31"
-    },
-    {
-     "club": "Nott'm Forest",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2010-07-01",
-     "lastDate": "2014-08-10"
     },
     {
      "club": "Walsall",
@@ -19991,7 +19912,7 @@
    },
    "involvements": [
     {
-     "club": "Walsall FC (-2015)",
+     "club": "Walsall FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -20578,7 +20499,7 @@
      "lastDate": "2024-02-01"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2023-08-25",
@@ -21384,11 +21305,11 @@
    },
    "involvements": [
     {
-     "club": "Inter (2003-17)",
-     "role": "academy",
+     "club": "Inter",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2018-06-30",
+     "lastDate": "2022-06-30"
     },
     {
      "club": "Juventus",
@@ -21410,13 +21331,6 @@
      "years": null,
      "firstDate": "2020-09-01",
      "lastDate": "2025-06-30"
-    },
-    {
-     "club": "Inter",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2018-06-30",
-     "lastDate": "2022-06-30"
     },
     {
      "club": "Pordenone",
@@ -21966,14 +21880,14 @@
    },
    "involvements": [
     {
-     "club": "Luton Town (2009–2016)",
+     "club": "Luton Town",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Norwich City (2016–2018)",
+     "club": "Norwich City",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -22095,7 +22009,7 @@
    },
    "involvements": [
     {
-     "club": "New York Red Bulls (2010–2015)",
+     "club": "New York Red Bulls",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -23018,11 +22932,11 @@
    },
    "involvements": [
     {
-     "club": "AFC Sunderland (-2011)",
+     "club": "Sunderland",
      "role": "academy",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2012-10-27",
+     "lastDate": "2012-10-27"
     },
     {
      "club": "Coventry City",
@@ -23093,13 +23007,6 @@
      "years": null,
      "firstDate": "2013-08-09",
      "lastDate": "2013-08-09"
-    },
-    {
-     "club": "Sunderland",
-     "role": "academy",
-     "years": null,
-     "firstDate": "2012-10-27",
-     "lastDate": "2012-10-27"
     },
     {
      "club": "Chesterfield",
@@ -23203,14 +23110,14 @@
    },
    "involvements": [
     {
-     "club": "FC Etoile Biel (-08/2014)",
+     "club": "FC Etoile Biel",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "BSC Young Boys (08/2014-2020)",
+     "club": "BSC Young Boys",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -23358,11 +23265,11 @@
    },
    "involvements": [
     {
-     "club": "Ipswich Town (2009–2017)",
-     "role": "academy",
+     "club": "Ipswich Town",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2017-07-01",
+     "lastDate": "2019-05-31"
     },
     {
      "club": "Coventry City",
@@ -23370,13 +23277,6 @@
      "years": null,
      "firstDate": "2025-09-01",
      "lastDate": "2025-09-01"
-    },
-    {
-     "club": "Ipswich Town",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2017-07-01",
-     "lastDate": "2019-05-31"
     },
     {
      "club": "Swindon Town",
@@ -23525,7 +23425,7 @@
    },
    "involvements": [
     {
-     "club": "Feyenoord (-2016)",
+     "club": "Feyenoord",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -23802,13 +23702,6 @@
      "lastDate": null
     },
     {
-     "club": "RKVV Meerburg Zoeterwoude (2010/11)",
-     "role": "academy",
-     "years": null,
-     "firstDate": null,
-     "lastDate": null
-    },
-    {
      "club": "Feyenoord Rotterdam",
      "role": "academy",
      "years": "2011-2016",
@@ -23997,14 +23890,14 @@
    },
    "involvements": [
     {
-     "club": "L'Aiglon du Lamentin FC (10/2010-09/2013)",
+     "club": "L'Aiglon du Lamentin FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "FC Rouen (09/2013-2016)",
+     "club": "FC Rouen",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -24527,7 +24420,7 @@
      "lastDate": "2026-08-17"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2022-07-01",
@@ -24757,7 +24650,7 @@
    },
    "involvements": [
     {
-     "club": "CSV '28 (2008–2012)",
+     "club": "CSV '28",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -24919,7 +24812,7 @@
    },
    "involvements": [
     {
-     "club": "SV Mieming (02/2013-)",
+     "club": "SV Mieming",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -26251,14 +26144,14 @@
    },
    "involvements": [
     {
-     "club": "ADO Den Haag (2006–2016)",
+     "club": "ADO Den Haag",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "Ajax Amsterdam (2016–2018)",
+     "club": "Ajax Amsterdam",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -26392,7 +26285,7 @@
    },
    "involvements": [
     {
-     "club": "KSV Ankerbrot (2004-)",
+     "club": "KSV Ankerbrot",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -26554,11 +26447,11 @@
      "lastDate": null
     },
     {
-     "club": "Paris FC (2018-)",
-     "role": "academy",
+     "club": "Paris FC",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2020-07-01",
+     "lastDate": "2020-07-01"
     },
     {
      "club": "Brighton & Hove Albion",
@@ -26580,13 +26473,6 @@
      "years": null,
      "firstDate": "2023-01-17",
      "lastDate": "2023-01-17"
-    },
-    {
-     "club": "Paris FC",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2020-07-01",
-     "lastDate": "2020-07-01"
     }
    ],
    "group": "DF"
@@ -26655,14 +26541,14 @@
      "lastDate": null
     },
     {
-     "club": "ADC Aveleda (2011/12)",
+     "club": "ADC Aveleda",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "FC Porto (2012/13)",
+     "club": "FC Porto",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -26676,7 +26562,7 @@
      "lastDate": null
     },
     {
-     "club": "Rio Ave FC (2017/18)",
+     "club": "Rio Ave FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -27780,11 +27666,11 @@
    },
    "involvements": [
     {
-     "club": "Brisbane Roar (-2024)",
-     "role": "academy",
+     "club": "Brisbane Roar",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2024-09-09",
+     "lastDate": "2024-09-09"
     },
     {
      "club": "Brisbane City",
@@ -27820,13 +27706,6 @@
      "years": null,
      "firstDate": "2026-01-26",
      "lastDate": "2026-01-26"
-    },
-    {
-     "club": "Brisbane Roar",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2024-09-09",
-     "lastDate": "2024-09-09"
     }
    ],
    "group": "DF"
@@ -27916,11 +27795,11 @@
      "lastDate": null
     },
     {
-     "club": "Manchester United (2011–2014)",
-     "role": "academy",
+     "club": "Manchester United",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2014-07-01",
+     "lastDate": "2014-07-01"
     },
     {
      "club": "Hull City",
@@ -27956,13 +27835,6 @@
      "years": null,
      "firstDate": "2016-08-11",
      "lastDate": "2016-08-11"
-    },
-    {
-     "club": "Manchester United",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2014-07-01",
-     "lastDate": "2014-07-01"
     }
    ],
    "group": "DF"
@@ -27984,11 +27856,11 @@
      "lastDate": null
     },
     {
-     "club": "Sunderland AFC",
-     "role": "academy",
+     "club": "Sunderland",
+     "role": "both",
      "years": "2009-2011",
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2009-07-01",
+     "lastDate": "2014-05-31"
     },
     {
      "club": "Hull City",
@@ -28033,13 +27905,6 @@
      "lastDate": "2014-07-03"
     },
     {
-     "club": "Sunderland",
-     "role": "both",
-     "years": null,
-     "firstDate": "2009-07-01",
-     "lastDate": "2014-05-31"
-    },
-    {
      "club": "Southend United",
      "role": "senior",
      "years": null,
@@ -28073,7 +27938,7 @@
    },
    "involvements": [
     {
-     "club": "Charlton Athletic (-2012)",
+     "club": "Charlton Athletic",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28305,7 +28170,7 @@
    },
    "involvements": [
     {
-     "club": "Chelsea FC (?-2016)",
+     "club": "Chelsea",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28413,28 +28278,28 @@
    },
    "involvements": [
     {
-     "club": "AS Lieusaint Football (09/2009-10/2012)",
+     "club": "AS Lieusaint Football",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "US Sénart-Moissy (10/2012-2017)",
+     "club": "US Sénart-Moissy",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "US Torcy (2017-08/2018)",
+     "club": "US Torcy",
      "role": "academy",
      "years": null,
      "firstDate": null,
      "lastDate": null
     },
     {
-     "club": "AS Saint-Étienne (08/2018-12/2019)",
+     "club": "AS Saint-Étienne",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28495,7 +28360,7 @@
    },
    "involvements": [
     {
-     "club": "Sheffield United (-2018)",
+     "club": "Sheffield United",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28535,7 +28400,7 @@
    },
    "involvements": [
     {
-     "club": "Colorados SC (-2015)",
+     "club": "Colorados SC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28709,7 +28574,7 @@
      "lastDate": null
     },
     {
-     "club": "Ryutsu Keizai University (2014–)",
+     "club": "Ryutsu Keizai University",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28763,7 +28628,7 @@
    },
    "involvements": [
     {
-     "club": "Millwall FC (-2018)",
+     "club": "Millwall FC",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -28857,7 +28722,7 @@
    },
    "involvements": [
     {
-     "club": "Manchester United (-2008)",
+     "club": "Manchester United",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -29070,7 +28935,7 @@
      "lastDate": "2019-01-02"
     },
     {
-     "club": "Nott'm Forest",
+     "club": "Nottingham Forest",
      "role": "senior",
      "years": null,
      "firstDate": "2017-08-03",
@@ -29164,11 +29029,11 @@
    },
    "involvements": [
     {
-     "club": "IK Oddevold(-2020)",
-     "role": "academy",
+     "club": "IK Oddevold",
+     "role": "both",
      "years": null,
-     "firstDate": null,
-     "lastDate": null
+     "firstDate": "2019-07-19",
+     "lastDate": "2019-07-19"
     },
     {
      "club": "Hull City",
@@ -29183,13 +29048,6 @@
      "years": null,
      "firstDate": "2023-01-08",
      "lastDate": "2023-01-08"
-    },
-    {
-     "club": "IK Oddevold",
-     "role": "senior",
-     "years": null,
-     "firstDate": "2019-07-19",
-     "lastDate": "2019-07-19"
     }
    ],
    "group": "FW"
@@ -29394,7 +29252,7 @@
    },
    "involvements": [
     {
-     "club": "USC Mantes (2015-17)",
+     "club": "USC Mantes",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -29434,7 +29292,7 @@
    },
    "involvements": [
     {
-     "club": "Wigan Athletic (2013–2019)",
+     "club": "Wigan Athletic",
      "role": "academy",
      "years": null,
      "firstDate": null,
@@ -29481,7 +29339,7 @@
    },
    "involvements": [
     {
-     "club": "SC Lüdenscheid (-2017)",
+     "club": "SC Lüdenscheid",
      "role": "academy",
      "years": null,
      "firstDate": null,

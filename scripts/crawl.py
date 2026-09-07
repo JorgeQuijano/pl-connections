@@ -50,7 +50,6 @@ SEASON = 2026
 YOUTH_MARKERS = re.compile(
     r"\b(u\d{2}|u\d{2}s?|yth\.?|youth|academy|reserves?|res\.?|i[ivx]?|b team|ii|b|junior|sub-19|sub-20|sub-21|sub-23)\b|(-19|-21|-23)$",
     re.I)
-YEAR_RANGE = re.compile(r"\((\d{4})(?:\s*-\s*(\d{4}))?\)")
 
 POS_GROUP = {
     "Goalkeeper": "GK",
@@ -82,15 +81,18 @@ DISPLAY_ALIAS = {  # raw row names -> canonical club display names we care about
     "west ham u18": "West Ham United", "west ham u21": "West Ham United", "west ham u23": "West Ham United",
     "leeds united": "Leeds United", "leeds": "Leeds United", "leeds united u21": "Leeds United",
     "leeds united u18": "Leeds United", "leeds united u23": "Leeds United",
-    "sunderland": "Sunderland", "afc sunderland": "Sunderland", "sunderland u21": "Sunderland", "sunderland u18": "Sunderland",
+    "sunderland": "Sunderland", "afc sunderland": "Sunderland", "sunderland afc": "Sunderland", "sunderland u21": "Sunderland", "sunderland u18": "Sunderland",
     "ipswich town": "Ipswich Town", "ipswich": "Ipswich Town", "ipswich town u21": "Ipswich Town", "ipswich town u18": "Ipswich Town",
     "nottingham forest": "Nottingham Forest", "nottingham": "Nottingham Forest", "nottingham forest u21": "Nottingham Forest",
     "nottingham forest u18": "Nottingham Forest", "nottm forest": "Nottingham Forest",
+    "nott m forest": "Nottingham Forest", "nott m forest u21": "Nottingham Forest",
+    "nott m forest u18": "Nottingham Forest", "nott m forest u23": "Nottingham Forest",
+    "nott m forest u19": "Nottingham Forest", "nottingham forest fc": "Nottingham Forest",
     "crystal palace": "Crystal Palace", "crystal palace u21": "Crystal Palace", "crystal palace u18": "Crystal Palace",
     "bournemouth": "Bournemouth", "afc bournemouth": "Bournemouth", "bournemouth u21": "Bournemouth", "bournemouth u18": "Bournemouth",
     "coventry city": "Coventry City", "coventry": "Coventry City", "coventry city u21": "Coventry City", "coventry city u18": "Coventry City",
     "brentford": "Brentford", "brentford fc": "Brentford", "brentford u21": "Brentford", "brentford u18": "Brentford",
-    "brighton & hove albion": "Brighton & Hove Albion", "brighton": "Brighton & Hove Albion",
+    "brighton & hove albion": "Brighton & Hove Albion", "brighton & hove albion fc": "Brighton & Hove Albion", "brighton": "Brighton & Hove Albion",
     "brighton & hove albion u21": "Brighton & Hove Albion", "brighton u18": "Brighton & Hove Albion", "brighton u21": "Brighton & Hove Albion",
     "hull city": "Hull City", "hull": "Hull City", "hull city u21": "Hull City", "hull city u18": "Hull City",
 }
@@ -151,11 +153,18 @@ class Crawler:
                 if div:
                     for chunk in div.get_text(" ", strip=True).split(","):
                         chunk = chunk.strip()
-                        m = YEAR_RANGE.search(chunk)
+                        m = re.search(r"\s*\(([^()]*)\)\s*$", chunk)
                         if m:
                             name = chunk[: m.start()].strip()
-                            out.append({"club": name, "from": int(m.group(1)),
-                                        "to": int(m.group(2)) if m.group(2) else None})
+                            inside = m.group(1).replace("\u2013", "-").strip()
+                            nums = re.findall(r"\d{4}", inside)
+                            if nums and inside[:1].isdigit():
+                                fr, to = int(nums[0]), int(nums[-1]) if len(nums) > 1 else None
+                            elif nums:
+                                fr, to = None, int(nums[-1])
+                            else:
+                                fr = to = None
+                            out.append({"club": name, "from": fr, "to": to})
                         else:
                             out.append({"club": chunk, "from": None, "to": None})
         return out
@@ -189,6 +198,8 @@ def club_str(x):
 def canon_club(raw_name):
     """Canonicalize a raw row/club name -> display name (youth levels collapse onto parent)."""
     raw_name = club_str(raw_name)
+    # drop trailing parenthetical year/date ranges that slipped into names (e.g. 'Chelsea FC (-2007)')
+    raw_name = re.sub(r"\s*\([^()]*\d[^()]*\)\s*$", "", raw_name)
     key = unicodedata.normalize("NFKD", raw_name.lower()).encode("ascii", "ignore").decode().strip()
     key = re.sub(r"[^a-z0-9& ]+", " ", key)
     key = re.sub(r"\s+", " ", key).strip()
