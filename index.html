@@ -16,6 +16,22 @@
 </header>
 
 <main>
+  <section id="overview">
+    <h2>Who feeds the Premier League?</h2>
+    <p class="sub">How many current PL players have a connection to each club, counted across all 20 squads.</p>
+    <div id="metric" class="chips small" role="group" aria-label="Metric">
+      <button class="chip small on" data-m="academy">Academy products</button>
+      <button class="chip small" data-m="senior">First-team alumni</button>
+      <button class="chip small" data-m="any">Any connection</button>
+    </div>
+    <div class="legend">
+      <span><i class="sw away"></i> now at another PL club</span>
+      <span><i class="sw home"></i> still at that club</span>
+    </div>
+    <div id="chart" role="img" aria-label="Bar chart of club contributions"></div>
+    <p id="chart-note" class="muted small"></p>
+  </section>
+
   <section id="club-picker" aria-label="Pick a club">
     <h2>Pick a club to see who's connected to it</h2>
     <label class="sr-only" for="club-select">Club</label>

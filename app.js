@@ -1,7 +1,9 @@
 /* PL Connections — pure vanilla, no deps. Reads data/pl-connections.json. */
 const DATA_URL = 'data/pl-connections.json';
-const state = { players: [], clubs: [], selected: null, pos: new Set(), query: '' };
+const state = { players: [], clubs: [], selected: null, pos: new Set(), query: '', metric: 'academy' };
 const ROLE_LABEL = { senior: 'First team', academy: 'Academy only', both: 'First team + academy' };
+const METRIC_ROLES = { academy: ['academy', 'both'], senior: ['senior', 'both'], any: ['academy', 'senior', 'both'] };
+const METRIC_VERB = { academy: 'came through the academy at', senior: 'played first-team football for', any: 'have a connection to' };
 const $ = (id) => document.getElementById(id);
 
 async function init() {
@@ -19,7 +21,15 @@ async function init() {
   document.getElementById('season-label').textContent = season;
   $('meta').textContent = `${state.players.length} players · ${state.clubs.length} clubs crawled · snapshot ${(data.meta && data.meta.crawledAt || '').slice(0, 10)} · source: Transfermarkt`;
   $('club-select').onchange = (e) => selectClub(e.target.value ? Number(e.target.value) : null);
+  document.querySelectorAll('#metric .chip').forEach(b => {
+    b.onclick = () => {
+      state.metric = b.dataset.m;
+      document.querySelectorAll('#metric .chip').forEach(x => x.classList.toggle('on', x === b));
+      renderOverview();
+    };
+  });
   renderClubs();
+  renderOverview();
 }
 
 function renderClubs() {
@@ -32,6 +42,47 @@ function renderClubs() {
     sel.appendChild(o);
   }
   sel.value = state.selected === null ? '' : String(state.selected);
+}
+
+function overviewRows() {
+  const roles = METRIC_ROLES[state.metric];
+  const rows = state.clubs.map(c => {
+    let total = 0, home = 0;
+    for (const p of state.players) {
+      const inv = (p.involvements || []).find(i => i.club === c.name);
+      if (inv && roles.includes(inv.role)) {
+        total++;
+        if (p.club.name === c.name) home++;
+      }
+    }
+    return { c, total, home, away: total - home };
+  });
+  rows.sort((a, b) => b.total - a.total || a.c.name.localeCompare(b.c.name));
+  return rows;
+}
+
+function renderOverview() {
+  const rows = overviewRows();
+  const max = Math.max(1, rows[0].total);
+  const chart = $('chart');
+  chart.innerHTML = rows.map(r => {
+    const homePct = (r.home / max) * 100;
+    const awayPct = (r.away / max) * 100;
+    return `
+    <div class="bar-row" data-id="${r.c.id}" role="button" tabindex="0" title="${r.c.name}: ${r.total} player${r.total === 1 ? '' : 's'} (${r.home} still there, ${r.away} elsewhere)">
+      <span class="bar-club">${r.c.name}</span>
+      <span class="bar-track">
+        ${r.total ? `<i class="bar home" style="width:${homePct}%"></i><i class="bar away" style="left:${homePct}%;width:${awayPct}%"></i>` : '<i class="bar none"></i>'}
+      </span>
+      <span class="bar-n">${r.total}</span>
+    </div>`;
+  }).join('');
+  chart.querySelectorAll('.bar-row').forEach(row => {
+    row.onclick = () => selectClub(Number(row.dataset.id));
+    row.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectClub(Number(row.dataset.id)); } };
+  });
+  const top = rows[0];
+  $('chart-note').textContent = `${top.c.name} tops the ranking: ${top.total} of today's PL players ${METRIC_VERB[state.metric]} ${top.c.name} — ${top.home} still there, ${top.away} playing elsewhere in the league. Click a bar to drill into that club.`;
 }
 
 function selectClub(id) {

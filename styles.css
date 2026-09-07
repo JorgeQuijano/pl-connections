@@ -85,6 +85,30 @@ td .expand:hover { color: var(--accent); }
 #about b { color: var(--text); }
 .error { color: #ff8080; }
 
+/* ---- overview chart ---- */
+#overview { margin-top: 18px; }
+#overview .sub { margin: 0 0 12px; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0 4px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.sw.away { background: var(--accent); }
+.sw.home { background: #3d9bff; }
+#chart { margin: 6px 0 10px; display: flex; flex-direction: column; gap: 4px; }
+.bar-row {
+  display: grid; grid-template-columns: 150px 1fr 30px; align-items: center;
+  gap: 10px; padding: 3px 6px; border-radius: 8px; cursor: pointer;
+}
+.bar-row:hover { background: #1a1f38; }
+.bar-row:focus-visible { outline: 2px solid var(--accent); }
+.bar-club { font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #c6caf0; }
+.bar-track { position: relative; height: 15px; background: var(--panel2); border-radius: 4px; overflow: hidden; }
+.bar { position: absolute; top: 0; bottom: 0; }
+.bar.home { left: 0; background: #3d9bff; }
+.bar.away { background: var(--accent); }
+.bar.none { width: 100%; }
+.bar-n { font-size: 13px; font-variant-numeric: tabular-nums; color: #c9cdf0; text-align: right; }
+.small { font-size: 13px; }
+
 /* ---- mobile: table rows become cards ---- */
 @media (max-width: 640px) {
   header { padding: 20px 16px 6px; }
@@ -114,4 +138,7 @@ td .expand:hover { color: var(--accent); }
   tr.detail td { display: block; border: 0; padding: 2px 0 12px; }
   tr.detail { margin-top: -6px; }
   .career-grid { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 96px 1fr 26px; gap: 8px; padding: 3px 2px; }
+  .bar-club { font-size: 12.5px; }
+  .legend { gap: 12px; }
 }
