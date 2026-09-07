@@ -1,0 +1,67 @@
+{
+ "league": "ita",
+ "name": "Serie A",
+ "clubs": [
+  {
+   "id": 5,
+   "name": "AC Milan",
+   "squadSize": 28
+  },
+  {
+   "id": 12,
+   "name": "AS Roma",
+   "squadSize": 25
+  },
+  {
+   "id": 46,
+   "name": "Inter Milan",
+   "squadSize": 24
+  },
+  {
+   "id": 130,
+   "name": "Parma",
+   "squadSize": 28
+  },
+  {
+   "id": 252,
+   "name": "Genoa",
+   "squadSize": 31
+  },
+  {
+   "id": 398,
+   "name": "Lazio",
+   "squadSize": 33
+  },
+  {
+   "id": 410,
+   "name": "Udinese",
+   "squadSize": 29
+  },
+  {
+   "id": 416,
+   "name": "Torino",
+   "squadSize": 29
+  },
+  {
+   "id": 430,
+   "name": "Fiorentina",
+   "squadSize": 25
+  },
+  {
+   "id": 506,
+   "name": "Juventus",
+   "squadSize": 28
+  },
+  {
+   "id": 607,
+   "name": "Venezia",
+   "squadSize": 38
+  },
+  {
+   "id": 800,
+   "name": "Atalanta",
+   "squadSize": 24
+  }
+ ],
+ "crawledAt": "2026-09-07T06:35:35.927630+00:00"
+}

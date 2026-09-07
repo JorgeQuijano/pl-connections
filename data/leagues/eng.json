@@ -1,0 +1,107 @@
+{
+ "league": "eng",
+ "name": "Premier League",
+ "clubs": [
+  {
+   "id": 11,
+   "name": "Arsenal",
+   "squadSize": 24
+  },
+  {
+   "id": 29,
+   "name": "Everton",
+   "squadSize": 21
+  },
+  {
+   "id": 31,
+   "name": "Liverpool",
+   "squadSize": 27
+  },
+  {
+   "id": 148,
+   "name": "Tottenham Hotspur",
+   "squadSize": 28
+  },
+  {
+   "id": 281,
+   "name": "Manchester City",
+   "squadSize": 25
+  },
+  {
+   "id": 289,
+   "name": "Sunderland",
+   "squadSize": 29
+  },
+  {
+   "id": 399,
+   "name": "Leeds United",
+   "squadSize": 24
+  },
+  {
+   "id": 405,
+   "name": "Aston Villa",
+   "squadSize": 28
+  },
+  {
+   "id": 631,
+   "name": "Chelsea",
+   "squadSize": 28
+  },
+  {
+   "id": 677,
+   "name": "Ipswich Town",
+   "squadSize": 28
+  },
+  {
+   "id": 703,
+   "name": "Nottingham Forest",
+   "squadSize": 24
+  },
+  {
+   "id": 762,
+   "name": "Newcastle United",
+   "squadSize": 25
+  },
+  {
+   "id": 873,
+   "name": "Crystal Palace",
+   "squadSize": 28
+  },
+  {
+   "id": 931,
+   "name": "Fulham",
+   "squadSize": 26
+  },
+  {
+   "id": 985,
+   "name": "Manchester United",
+   "squadSize": 30
+  },
+  {
+   "id": 989,
+   "name": "Bournemouth",
+   "squadSize": 29
+  },
+  {
+   "id": 990,
+   "name": "Coventry City",
+   "squadSize": 29
+  },
+  {
+   "id": 1148,
+   "name": "Brentford",
+   "squadSize": 29
+  },
+  {
+   "id": 1237,
+   "name": "Brighton & Hove Albion",
+   "squadSize": 30
+  },
+  {
+   "id": 3008,
+   "name": "Hull City",
+   "squadSize": 34
+  }
+ ],
+ "crawledAt": "2026-09-07T02:30:38.747152+00:00"
+}

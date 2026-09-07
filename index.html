@@ -3,29 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PL Connections — Premier League club alumni tracker</title>
-<meta name="description" content="Which current Premier League players have history — first team or academy — with each club. Data: Transfermarkt (26/27 season snapshot).">
+<title>Club Connections — big-4 European league alumni tracker</title>
+<meta name="description" content="Which current players in Europe's big four leagues (Premier League, Bundesliga, Serie A, La Liga) have history — first team or academy — with each club. Data: Transfermarkt.">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
 </head>
 <body>
 <header>
-  <h1>PL Connections</h1>
-  <p class="sub">Current Premier League players and the clubs they've been part of — <b>first team or academy</b>.</p>
+  <h1>Club Connections</h1>
+  <p class="sub">Current players in Europe's big four leagues and the clubs they've been part of — <b>first team or academy</b>.</p>
   <p class="meta" id="meta"></p>
 </header>
 
 <main>
+  <div id="league-tabs" class="tabs" role="tablist" aria-label="League"></div>
+
   <section id="overview">
-    <h2>Who feeds the Premier League?</h2>
-    <p class="sub">How many current PL players have a connection to each club, counted across all 20 squads.</p>
+    <h2>Who feeds <span id="league-name">the league</span>?</h2>
+    <p class="sub" id="overview-sub"></p>
     <div id="metric" class="chips small" role="group" aria-label="Metric">
       <button class="chip small on" data-m="academy">Academy products</button>
       <button class="chip small" data-m="senior">First-team alumni</button>
       <button class="chip small" data-m="any">Any connection</button>
     </div>
     <div class="legend">
-      <span><i class="sw away"></i> now at another PL club</span>
+      <span><i class="sw away"></i> now at another club in the league</span>
       <span><i class="sw home"></i> still at that club</span>
     </div>
     <div id="chart" role="img" aria-label="Bar chart of club contributions"></div>
@@ -58,8 +60,9 @@
   <section id="about">
     <h2>About</h2>
     <ul>
-      <li>Rosters = first-team squads of the <b id="season-label">26/27</b> Premier League on Transfermarkt (snapshot taken at crawl time, post-deadline-day).</li>
+      <li>Squads = first-team squads of the <b>26/27</b> season across the Premier League, Bundesliga, Serie A and La Liga (Transfermarkt snapshot, taken after the summer window).</li>
       <li><b>First team</b> = played a senior match (or was in the senior squad) for the club. <b>Academy</b> = youth-club affiliation (from Transfermarkt's "Youth clubs" record) or youth-level move.</li>
+      <li>Connections are counted per league: pick a league, then a club, to see which of that league's players have history with it.</li>
       <li>This is an experimental dataset built for personal use; verify before publishing anything.</li>
     </ul>
   </section>

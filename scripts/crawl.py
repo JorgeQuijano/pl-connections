@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Crawl Transfermarkt for current PL squads + per-player club history (youth + senior).
+"""Crawl Transfermarkt for big-4 European league squads + per-player club history.
 
-Output: JSON dataset at data/pl-connections.json
-  players[]: {id, name, position, group, club: {id,name},
-              youth: [{club, from, to}],           // parsed "Youth clubs" box
-              history: [{from, to, date, season, fee}],  // ceapi transfer history (incl youth levels)
-              involvements: [{club, role: senior|academy, years, firstDate, lastDate}]}
+Leagues: Premier League (eng), Bundesliga (deu), Serie A (ita), La Liga (esp).
+
+Two phases:
+  1) crawl  — fetch squad pages + per-player youth/history into data/raw/ (resumable)
+              and write data/leagues/{key}.json (club registry: ids, observed names, squad size)
+  2) assemble — rebuild the final dataset from raw cache + registries, computing
+              involvements against a full club-name registry (order-independent)
+
 Usage:
-  python scripts/crawl.py                      # all 20 PL clubs
-  python scripts/crawl.py --clubs 631,11,281   # subset (spike)
-  python scripts/crawl.py --limit 5            # quick smoke test per club
+  .venv/bin/python scripts/crawl.py crawl --leagues eng,deu,ita,esp
+  .venv/bin/python scripts/crawl.py crawl --leagues ita --limit 3   # smoke test
+  .venv/bin/python scripts/crawl.py assemble --out data/pl-connections.json
 """
 import argparse, json, os, re, sys, time, unicodedata
 from datetime import datetime, timezone
@@ -19,111 +22,222 @@ from bs4 import BeautifulSoup
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(BASE, "data", "raw")
+LEAGUE_DIR = os.path.join(BASE, "data", "leagues")
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
-
-# PL 26/27 participants (from competition page season links, Sep 2026 snapshot)
-CLUBS = {
-    11:  ("Arsenal", "arsenal-fc"),
-    29:  ("Everton", "fc-everton"),
-    31:  ("Liverpool", "liverpool-fc"),
-    148: ("Tottenham Hotspur", "tottenham-hotspur"),
-    281: ("Manchester City", "manchester-city"),
-    289: ("Sunderland", "afc-sunderland"),
-    399: ("Leeds United", "leeds-united"),
-    405: ("Aston Villa", "aston-villa"),
-    631: ("Chelsea", "fc-chelsea"),
-    677: ("Ipswich Town", "ipswich-town"),
-    703: ("Nottingham Forest", "nottingham-forest"),
-    762: ("Newcastle United", "newcastle-united"),
-    873: ("Crystal Palace", "crystal-palace"),
-    931: ("Fulham", "fc-fulham"),
-    985: ("Manchester United", "manchester-united"),
-    989: ("Bournemouth", "afc-bournemouth"),
-    990: ("Coventry City", "coventry-city"),
-    1148: ("Brentford", "fc-brentford"),
-    1237: ("Brighton & Hove Albion", "brighton-amp-hove-albion"),
-    3008: ("Hull City", "hull-city"),
-}
 SEASON = 2026
+
+# League definitions: club ids for the 26/27 season (TM competition ids GB1/L1/IT1/ES1).
+LEAGUES = [
+    {"key": "eng", "name": "Premier League", "clubs": [11, 29, 31, 148, 281, 289, 399, 405, 631, 677,
+                                                         703, 762, 873, 931, 985, 989, 990, 1148, 1237, 3008]},
+    {"key": "deu", "name": "Bundesliga", "clubs": [3, 15, 16, 18, 24, 27, 33, 39, 41, 60,
+                                                    64, 79, 86, 89, 127, 167, 533, 23826]},
+    {"key": "ita", "name": "Serie A", "clubs": [5, 12, 46, 130, 252, 398, 410, 416, 430, 506,
+                                                 607, 800, 1005, 1025, 1047, 1390, 2919, 6195, 6574, 8970]},
+    {"key": "esp", "name": "La Liga", "clubs": [13, 131, 150, 331, 367, 368, 418, 621, 630, 681,
+                                                 714, 897, 940, 1049, 1050, 1084, 1108, 1531, 3368, 3709]},
+]
+# Display-name overrides (squad-page h1 is the fallback; override where h1 is verbose/odd).
+NAMES = {11: "Arsenal", 29: "Everton", 31: "Liverpool", 148: "Tottenham Hotspur",
+         281: "Manchester City", 289: "Sunderland", 399: "Leeds United", 405: "Aston Villa",
+         631: "Chelsea", 677: "Ipswich Town", 703: "Nottingham Forest", 762: "Newcastle United",
+         873: "Crystal Palace", 931: "Fulham", 985: "Manchester United", 989: "Bournemouth",
+         990: "Coventry City", 1148: "Brentford", 1237: "Brighton & Hove Albion", 3008: "Hull City",
+         3: "FC Köln", 15: "Bayer Leverkusen", 16: "Borussia Dortmund", 18: "Borussia Mönchengladbach",
+         24: "Eintracht Frankfurt", 27: "Bayern Munich", 33: "Schalke 04", 39: "Mainz 05",
+         41: "Hamburger SV", 60: "SC Freiburg", 64: "Elversberg", 79: "VfB Stuttgart",
+         86: "Werder Bremen", 89: "Union Berlin", 127: "SC Paderborn", 167: "FC Augsburg",
+         533: "TSG Hoffenheim", 23826: "RB Leipzig",
+         5: "AC Milan", 12: "AS Roma", 46: "Inter Milan", 130: "Parma", 252: "Genoa",
+         398: "Lazio", 410: "Udinese", 416: "Torino", 430: "Fiorentina", 506: "Juventus",
+         607: "Venezia", 800: "Atalanta", 1005: "Lecce", 1025: "Bologna", 1047: "Como",
+         1390: "Cagliari", 2919: "Monza", 6195: "Napoli", 6574: "Sassuolo", 8970: "Frosinone",
+         13: "Atlético Madrid", 131: "Barcelona", 150: "Real Betis", 331: "Osasuna",
+         367: "Rayo Vallecano", 368: "Sevilla", 418: "Real Madrid", 621: "Athletic Bilbao",
+         630: "Racing Santander", 681: "Real Sociedad", 714: "Espanyol", 897: "Deportivo La Coruña",
+         940: "Celta Vigo", 1049: "Valencia", 1050: "Villarreal", 1084: "Málaga",
+         1108: "Alavés", 1531: "Elche", 3368: "Levante", 3709: "Getafe"}
 
 YOUTH_MARKERS = re.compile(
     r"\b(u\d{2}|u\d{2}s?|yth\.?|youth|academy|reserves?|res\.?|i[ivx]?|b team|ii|b|junior|sub-19|sub-20|sub-21|sub-23)\b|(-19|-21|-23)$",
     re.I)
 
 POS_GROUP = {
-    "Goalkeeper": "GK",
-    "Defender": "DF", "Right-Back": "DF", "Centre-Back": "DF", "Left-Back": "DF",
+    "Goalkeeper": "GK", "Defender": "DF", "Right-Back": "DF", "Centre-Back": "DF", "Left-Back": "DF",
     "Midfielder": "MF", "Defensive Midfield": "MF", "Central Midfield": "MF",
     "Attacking Midfield": "MF", "Right Midfield": "MF", "Left Midfield": "MF",
     "Attack": "FW", "Right Winger": "FW", "Left Winger": "FW", "Centre-Forward": "FW",
     "Second Striker": "FW", "Striker": "FW",
 }
-DISPLAY_ALIAS = {  # raw row names -> canonical club display names we care about
-    "chelsea": "Chelsea", "chelsea youth": "Chelsea", "chelsea u18": "Chelsea", "chelsea u21": "Chelsea",
-    "chelsea u23": "Chelsea", "chelsea u19": "Chelsea", "chelsea fc": "Chelsea",
-    "arsenal": "Arsenal", "arsenal fc": "Arsenal", "arsenal youth": "Arsenal", "arsenal u21": "Arsenal",
-    "arsenal u18": "Arsenal", "arsenal u23": "Arsenal", "arsenal u19": "Arsenal",
-    "liverpool": "Liverpool", "liverpool fc": "Liverpool", "liverpool youth": "Liverpool",
-    "liverpool u21": "Liverpool", "liverpool u18": "Liverpool", "liverpool u23": "Liverpool",
-    "manchester city": "Manchester City", "man city": "Manchester City", "manchester city u21": "Manchester City",
-    "manchester city u18": "Manchester City", "manchester city u23": "Manchester City",
-    "manchester united": "Manchester United", "man utd": "Manchester United", "manchester united u21": "Manchester United",
-    "manchester united u18": "Manchester United", "manchester united u23": "Manchester United",
-    "tottenham hotspur": "Tottenham Hotspur", "tottenham": "Tottenham Hotspur", "tottenham hotspur u21": "Tottenham Hotspur",
-    "tottenham hotspur u18": "Tottenham Hotspur", "spurs": "Tottenham Hotspur",
-    "newcastle united": "Newcastle United", "newcastle": "Newcastle United", "newcastle united u21": "Newcastle United",
-    "newcastle united u18": "Newcastle United",
-    "aston villa": "Aston Villa", "aston villa u21": "Aston Villa", "aston villa u18": "Aston Villa",
-    "everton": "Everton", "everton fc": "Everton", "everton u21": "Everton", "everton u18": "Everton",
-    "fulham": "Fulham", "fulham fc": "Fulham", "fulham u21": "Fulham", "fulham u18": "Fulham",
-    "west ham united": "West Ham United", "west ham": "West Ham United", "west ham yth.": "West Ham United",
-    "west ham u18": "West Ham United", "west ham u21": "West Ham United", "west ham u23": "West Ham United",
-    "leeds united": "Leeds United", "leeds": "Leeds United", "leeds united u21": "Leeds United",
-    "leeds united u18": "Leeds United", "leeds united u23": "Leeds United",
-    "sunderland": "Sunderland", "afc sunderland": "Sunderland", "sunderland afc": "Sunderland", "sunderland u21": "Sunderland", "sunderland u18": "Sunderland",
-    "ipswich town": "Ipswich Town", "ipswich": "Ipswich Town", "ipswich town u21": "Ipswich Town", "ipswich town u18": "Ipswich Town",
-    "nottingham forest": "Nottingham Forest", "nottingham": "Nottingham Forest", "nottingham forest u21": "Nottingham Forest",
-    "nottingham forest u18": "Nottingham Forest", "nottm forest": "Nottingham Forest",
-    "nott m forest": "Nottingham Forest", "nott m forest u21": "Nottingham Forest",
+
+# Known alternate spellings/abbreviations -> canonical display name (normalized keys).
+DISPLAY_ALIAS = {
+    "chelsea fc": "Chelsea", "chelsea u18": "Chelsea", "chelsea u21": "Chelsea",
+    "chelsea u23": "Chelsea", "chelsea u19": "Chelsea", "chelsea youth": "Chelsea",
+    "arsenal fc": "Arsenal", "arsenal u21": "Arsenal", "arsenal u18": "Arsenal", "arsenal u23": "Arsenal",
+    "liverpool fc": "Liverpool", "liverpool u21": "Liverpool", "liverpool u18": "Liverpool",
+    "manchester city u21": "Manchester City", "manchester city u18": "Manchester City", "manchester city u23": "Manchester City",
+    "man city": "Manchester City", "manchester united u21": "Manchester United", "manchester united u18": "Manchester United",
+    "manchester united u23": "Manchester United", "man utd": "Manchester United", "manchester united fc": "Manchester United",
+    "tottenham": "Tottenham Hotspur", "tottenham hotspur u21": "Tottenham Hotspur", "spurs": "Tottenham Hotspur",
+    "newcastle": "Newcastle United", "newcastle united u21": "Newcastle United", "newcastle united u18": "Newcastle United",
+    "aston villa u21": "Aston Villa", "aston villa fc": "Aston Villa",
+    "everton fc": "Everton", "fulham fc": "Fulham",
+    "west ham united": "West Ham United", "west ham": "West Ham United", "west ham u18": "West Ham United",
+    "leeds": "Leeds United", "leeds united u21": "Leeds United",
+    "afc sunderland": "Sunderland", "sunderland afc": "Sunderland",
+    "ipswich": "Ipswich Town", "nottingham": "Nottingham Forest",
+    "nottm forest": "Nottingham Forest", "nott m forest": "Nottingham Forest",
+    "nottingham forest fc": "Nottingham Forest", "nott m forest u21": "Nottingham Forest",
     "nott m forest u18": "Nottingham Forest", "nott m forest u23": "Nottingham Forest",
-    "nott m forest u19": "Nottingham Forest", "nottingham forest fc": "Nottingham Forest",
-    "crystal palace": "Crystal Palace", "crystal palace u21": "Crystal Palace", "crystal palace u18": "Crystal Palace",
-    "bournemouth": "Bournemouth", "afc bournemouth": "Bournemouth", "bournemouth u21": "Bournemouth", "bournemouth u18": "Bournemouth",
-    "coventry city": "Coventry City", "coventry": "Coventry City", "coventry city u21": "Coventry City", "coventry city u18": "Coventry City",
-    "brentford": "Brentford", "brentford fc": "Brentford", "brentford u21": "Brentford", "brentford u18": "Brentford",
-    "brighton & hove albion": "Brighton & Hove Albion", "brighton & hove albion fc": "Brighton & Hove Albion", "brighton": "Brighton & Hove Albion",
-    "brighton & hove albion u21": "Brighton & Hove Albion", "brighton u18": "Brighton & Hove Albion", "brighton u21": "Brighton & Hove Albion",
-    "hull city": "Hull City", "hull": "Hull City", "hull city u21": "Hull City", "hull city u18": "Hull City",
+    "crystal palace u21": "Crystal Palace", "afc bournemouth": "Bournemouth",
+    "coventry": "Coventry City", "brentford fc": "Brentford",
+    "brighton": "Brighton & Hove Albion", "brighton & hove albion fc": "Brighton & Hove Albion",
+    "hull": "Hull City",
+    "fc bayern munchen": "Bayern Munich", "bayern": "Bayern Munich", "fc bayern": "Bayern Munich",
+    "bayern munchen": "Bayern Munich", "bayern munich u19": "Bayern Munich", "bayern munich ii": "Bayern Munich",
+    "bayern munich u17": "Bayern Munich", "borussia dortmund u19": "Borussia Dortmund", "bvb dortmund": "Borussia Dortmund",
+    "rb leipzig": "RB Leipzig", "rasenballsport leipzig": "RB Leipzig", "bayer 04 leverkusen": "Bayer Leverkusen",
+    "bayer leverkusen": "Bayer Leverkusen", "borussia monchengladbach": "Borussia Mönchengladbach",
+    "eintracht frankfurt": "Eintracht Frankfurt", "vfb stuttgart": "VfB Stuttgart", "vfl wolfsburg": "Wolfsburg",
+    "1 fc koln": "FC Köln", "fc koln": "FC Köln", "1 fc union berlin": "Union Berlin", "fc union berlin": "Union Berlin",
+    "1 fsv mainz 05": "Mainz 05", "fc schalke 04": "Schalke 04", "hamburger sv": "Hamburger SV",
+    "sc freiburg": "SC Freiburg", "sv werder bremen": "Werder Bremen", "fc augsburg": "FC Augsburg",
+    "tsg 1899 hoffenheim": "TSG Hoffenheim", "tsg hoffenheim": "TSG Hoffenheim", "sc paderborn 07": "SC Paderborn",
+    "sv 07 elversberg": "Elversberg",
+    "ac milan": "AC Milan", "ac mailand": "AC Milan", "ac milan u19": "AC Milan", "ac milan primavera": "AC Milan",
+    "inter": "Inter Milan", "inter milan": "Inter Milan", "inter u19": "Inter Milan", "inter u20": "Inter Milan",
+    "as roma": "AS Roma", "as rom": "AS Roma", "ssc napoli": "Napoli", "ssc neapel": "Napoli", "napoli": "Napoli",
+    "juventus": "Juventus", "juventus fc": "Juventus", "juventus u19": "Juventus", "juventus next gen": "Juventus",
+    "juventus u23": "Juventus", "atalanta": "Atalanta", "atalanta bc": "Atalanta", "atalanta u23": "Atalanta",
+    "ss lazio": "Lazio", "lazio rom": "Lazio", "acf fiorentina": "Fiorentina", "ac florenz": "Fiorentina",
+    "us lecce": "Lecce", "torino fc": "Torino", "fc turin": "Torino", "genoa cfc": "Genoa", "genua cfc": "Genoa",
+    "cagliari calcio": "Cagliari", "ac monza": "Monza", "bologna fc 1909": "Bologna", "fc bologna": "Bologna",
+    "parma calcio 1913": "Parma", "udinese calcio": "Udinese", "venezia fc": "Venezia", "como 1907": "Como",
+    "us sassuolo": "Sassuolo", "frosinone calcio": "Frosinone",
+    "real madrid": "Real Madrid", "real madrid cf": "Real Madrid", "real madrid u19": "Real Madrid",
+    "real madrid castilla": "Real Madrid", "fc barcelona": "Barcelona", "fc barcelona u19": "Barcelona",
+    "barcelona atletic": "Barcelona", "barca atletic": "Barcelona", "atletico madrid": "Atlético Madrid",
+    "atletico de madrid": "Atlético Madrid", "atletico madrid u19": "Atlético Madrid", "atletico": "Atlético Madrid",
+    "athletic bilbao": "Athletic Bilbao", "real sociedad": "Real Sociedad", "real betis": "Real Betis",
+    "real betis balompie": "Real Betis", "betis": "Real Betis", "sevilla fc": "Sevilla", "fc sevilla": "Sevilla",
+    "valencia cf": "Valencia", "fc valencia": "Valencia", "villarreal cf": "Villarreal",
+    "celta de vigo": "Celta Vigo", "deportivo alaves": "Alavés", "deportivo la coruna": "Deportivo La Coruña",
+    "malaga cf": "Málaga", "fc malaga": "Málaga", "ca osasuna": "Osasuna", "osasuna": "Osasuna",
+    "rayo vallecano": "Rayo Vallecano", "getafe cf": "Getafe", "fc getafe": "Getafe", "espanyol": "Espanyol",
+    "elche cf": "Elche", "fc elche": "Elche", "ud levante": "Levante", "levante ud": "Levante",
+    "racing santander": "Racing Santander",
+    # short forms used by TM history rows (deu/ita/esp) -> canonical display
+    "monchengladbach": "Borussia Mönchengladbach", "dortmund": "Borussia Dortmund",
+    "hoffenheim": "TSG Hoffenheim", "mainz": "Mainz 05", "augsburg": "FC Augsburg",
+    "stuttgart": "VfB Stuttgart", "frankfurt": "Eintracht Frankfurt", "elversberg": "Elversberg",
+    "sv elversberg": "Elversberg", "hamburg": "Hamburger SV",
+    "bremen": "Werder Bremen", "freiburg": "SC Freiburg", "paderborn": "SC Paderborn",
+    "leipzig": "RB Leipzig", "leverkusen": "Bayer Leverkusen", "koln": "FC Köln",
+    "milan": "AC Milan", "rom": "AS Roma", "roma": "AS Roma", "fiorentina": "Fiorentina",
+    "bologna": "Bologna", "genoa": "Genoa", "torino": "Torino", "cagliari": "Cagliari",
+    "parma": "Parma", "como": "Como", "sassuolo": "Sassuolo", "frosinone": "Frosinone",
+    "madrid": "Real Madrid", "sevilla": "Sevilla", "villarreal": "Villarreal",
+    "bilbao": "Athletic Bilbao", "sociedad": "Real Sociedad", "alaves": "Alavés",
+    "levante": "Levante", "celta": "Celta Vigo", "malaga": "Málaga",
+    "deportivo": "Deportivo La Coruña",
 }
-NONPL = {"england", "england u21", "wales", "scotland", "ireland", "benfica lisbon", "benfica lisbon u23"}
+
+
+def norm_key(raw_name):
+    s = unicodedata.normalize("NFKD", raw_name.lower()).encode("ascii", "ignore").decode().strip()
+    s = re.sub(r"[^a-z0-9& ]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def canon_club(raw_name, registry):
+    """Map a raw club name from TM rows -> canonical display name.
+
+    registry: {club_id: display_name} for all league clubs. Chain:
+    known alias (normalized) -> registry exact match (suffix-stripped youth levels) -> raw.
+    """
+    raw_name = str(raw_name or "")
+    raw_name = re.sub(r"\s*\([^()]*\d[^()]*\)\s*$", "", raw_name)  # 'Chelsea FC (-2007)' -> 'Chelsea FC'
+    if not raw_name.strip():
+        return None
+    key = norm_key(raw_name)
+    if key in DISPLAY_ALIAS:
+        return DISPLAY_ALIAS[key]
+    # exact registry match
+    if registry:
+        hit = registry.get(key)
+        if hit:
+            return hit
+    # youth-level rows: strip trailing youth tokens, retry registry/alias
+    tokens = key.split()
+    stripped = key
+    while tokens and tokens[-1] in {"u15", "u16", "u17", "u18", "u19", "u20", "u21", "u22", "u23",
+                                    "u17s", "u18s", "u19s", "u21s", "yth", "yth.", "youth", "academy",
+                                    "reserves", "res.", "ii", "b", "i", "iii", "junior", "b team"}:
+        tokens = tokens[:-1]
+        stripped = " ".join(tokens)
+        if stripped in DISPLAY_ALIAS:
+            return DISPLAY_ALIAS[stripped]
+        if registry and stripped in registry:
+            return registry[stripped]
+    return raw_name.strip()
 
 
 class Crawler:
+    UAS = [
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+        "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+    ]
+
     def __init__(self, delay=1.1):
-        self.s = requests.Session()
-        self.s.headers.update({"User-Agent": UA, "Accept-Language": "en"})
         self.delay = delay
+        self._n = 0
+        self._fresh_session()
+
+    def _fresh_session(self):
+        self.s = requests.Session()
+        self.s.headers.update({"User-Agent": self.UAS[self._n % len(self.UAS)],
+                               "Accept-Language": "en,en-US;q=0.9",
+                               "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8"})
+        self._n += 1
+
+    def rotate(self):
+        try:
+            self.s.close()
+        except Exception:
+            pass
+        self._fresh_session()
+        time.sleep(3)
 
     def get(self, url, referer="https://www.transfermarkt.com/"):
-        for attempt in range(4):
+        for attempt in range(5):
             try:
                 r = self.s.get(url, headers={"Referer": referer}, timeout=30)
-                if r.status_code in (429, 509, 403) and attempt < 3:
-                    time.sleep(20 * (attempt + 1))
+                if r.status_code in (403, 405, 429, 509) and attempt < 4:
+                    self.rotate()
+                    time.sleep(15 * (attempt + 1) + 5 * attempt)
                     continue
                 r.raise_for_status()
                 return r
-            except requests.RequestException as e:
-                if attempt == 3:
+            except requests.RequestException:
+                if attempt == 4:
                     raise
-                time.sleep(4 * (attempt + 1))
+                self.rotate()
+                time.sleep(6 * (attempt + 1))
         raise RuntimeError(f"failed: {url}")
 
-    def squad(self, club_id, slug):
-        """Return list of {id, name, position} from the kader page."""
-        url = f"https://www.transfermarkt.com/{slug}/kader/verein/{club_id}/saison_id/{SEASON}"
+    def squad(self, club_id):
+        """Squad page -> (display name from h1, [players]). Neutral /-/ URL, no slug needed."""
+        url = f"https://www.transfermarkt.com/-/kader/verein/{club_id}/saison_id/{SEASON}"
         soup = BeautifulSoup(self.get(url).text, "html.parser")
+        name = NAMES.get(club_id)
+        if not name:
+            h1 = soup.select_one("h1")
+            if h1:
+                name = h1.get_text(" ", strip=True)
         players = []
         for row in soup.select("tr.odd, tr.even"):
             hl = row.select_one("td.hauptlink a[href*='profil/spieler']")
@@ -131,7 +245,7 @@ class Crawler:
                 continue
             pid = hl["href"].rsplit("/", 1)[-1]
             tds = row.find_all("td")
-            name = hl.get_text(strip=True)
+            pname = hl.get_text(strip=True)
             pos = ""
             try:
                 idx = tds.index(hl.find_parent("td"))
@@ -139,11 +253,10 @@ class Crawler:
                     pos = tds[idx + 1].get_text(strip=True)
             except ValueError:
                 pass
-            players.append({"id": pid, "name": name, "position": pos})
-        return players
+            players.append({"id": pid, "name": pname, "position": pos})
+        return name or NAMES.get(club_id, str(club_id)), players
 
     def youth_affiliations(self, player_id):
-        """Parse the 'Youth clubs' info box from the profil page."""
         url = f"https://www.transfermarkt.com/-/profil/spieler/{player_id}"
         soup = BeautifulSoup(self.get(url).text, "html.parser")
         out = []
@@ -170,142 +283,173 @@ class Crawler:
         return out
 
     def transfer_history(self, player_id):
-        url = f"https://www.transfermarkt.com/ceapi/transferHistory/list/{player_id}"
-        d = self.get(url).json()
-        return d.get("transfers", [])
+        return self.get(f"https://www.transfermarkt.com/ceapi/transferHistory/list/{player_id}").json().get("transfers", [])
 
     def player(self, pid):
-        """Fetch + normalize one player's history. Raw results cached under data/raw/."""
         cache = os.path.join(RAW_DIR, f"{pid}.json")
         if os.path.exists(cache):
             return json.load(open(cache))
-        youth = self.youth_affiliations(pid)
+        rec = {"id": pid, "youth": self.youth_affiliations(pid)}
         time.sleep(self.delay)
-        hist = self.transfer_history(pid)
-        rec = {"id": pid, "youth": youth, "history": hist}
+        rec["history"] = self.transfer_history(pid)
         os.makedirs(RAW_DIR, exist_ok=True)
         json.dump(rec, open(cache, "w"))
         return rec
 
 
-def club_str(x):
-    """ceapi rows may give club as string or dict with clubName."""
-    if isinstance(x, dict):
-        return str(x.get("clubName", ""))
-    return str(x or "")
-
-
-def canon_club(raw_name):
-    """Canonicalize a raw row/club name -> display name (youth levels collapse onto parent)."""
-    raw_name = club_str(raw_name)
-    # drop trailing parenthetical year/date ranges that slipped into names (e.g. 'Chelsea FC (-2007)')
-    raw_name = re.sub(r"\s*\([^()]*\d[^()]*\)\s*$", "", raw_name)
-    key = unicodedata.normalize("NFKD", raw_name.lower()).encode("ascii", "ignore").decode().strip()
-    key = re.sub(r"[^a-z0-9& ]+", " ", key)
-    key = re.sub(r"\s+", " ", key).strip()
-    if key in DISPLAY_ALIAS:
-        return DISPLAY_ALIAS[key]
-    if key in NONPL:
-        return None
-    # unknown club: strip youth marker for a friendlier label
-    if YOUTH_MARKERS.search(key):
-        return None
-    return raw_name.strip()
-
-
-def row_role(raw_name):
-    """senior vs academy for a transfer-history row destination."""
-    raw_name = club_str(raw_name)
-    key = unicodedata.normalize("NFKD", raw_name.lower()).encode("ascii", "ignore").decode().strip()
-    return "academy" if YOUTH_MARKERS.search(key) else "senior"
-
-
-def involvement_summary(player):
-    """Collapse youth box + transfer history into per-club involvements."""
-    inv = {}  # club -> {role_prio, years, dates:[]}
-    # youth affiliations box -> academy
+def involvement_summary(player, registry):
+    inv = {}
     for y in player.get("youth", []):
-        c = canon_club(y["club"])
+        c = canon_club(y["club"], registry)
         if not c:
             continue
         e = inv.setdefault(c, {"roles": set(), "years": None, "first": None, "last": None})
         e["roles"].add("academy")
         if y.get("from"):
             e["years"] = f"{y['from']}-{y['to'] or ''}"
-    # transfer history rows -> destination club (academy row or senior row)
     for tr in player.get("history", []):
-        to = club_str(tr.get("to"))
-        c = canon_club(to)
+        to = tr.get("to")
+        to = to.get("clubName", "") if isinstance(to, dict) else str(to or "")
+        to = re.sub(r"\s*\([^()]*\d[^()]*\)\s*$", "", to)
+        c = canon_club(to, registry)
         if not c:
             continue
         e = inv.setdefault(c, {"roles": set(), "years": None, "first": None, "last": None})
-        e["roles"].add(row_role(to))
+        e["roles"].add("academy" if YOUTH_MARKERS.search(norm_key(to)) else "senior")
         d = tr.get("dateUnformatted") or tr.get("date")
         if isinstance(d, dict):
             d = d.get("date") or d.get("dateUnformatted")
         if isinstance(d, str) and d:
-            try:
-                dt = d[:10]
-                if e["first"] is None or dt < e["first"]:
-                    e["first"] = dt
-                if e["last"] is None or dt > e["last"]:
-                    e["last"] = dt
-            except Exception:
-                pass
+            dt = d[:10]
+            if e["first"] is None or dt < e["first"]:
+                e["first"] = dt
+            if e["last"] is None or dt > e["last"]:
+                e["last"] = dt
     out = []
     for club, e in inv.items():
-        role = "senior" if "senior" in e["roles"] else "academy"
-        if e["roles"] == {"academy", "senior"}:
+        if len(e["roles"]) == 2:
             role = "both"
+        elif e["roles"] == {"senior"}:
+            role = "senior"
+        else:
+            role = "academy"
         out.append({"club": club, "role": role, "years": e["years"],
                     "firstDate": e["first"], "lastDate": e["last"]})
     return out
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--clubs", help="comma list of club ids (default: all 20)")
-    ap.add_argument("--limit", type=int, help="max players per club (smoke test)")
-    ap.add_argument("--delay", type=float, default=1.1)
-    ap.add_argument("--out", default=os.path.join(BASE, "data", "pl-connections.json"))
-    args = ap.parse_args()
-
-    club_ids = [int(c) for c in args.clubs.split(",")] if args.clubs else list(CLUBS)
+def cmd_crawl(args):
+    league_keys = args.leagues.split(",") if args.leagues else [L["key"] for L in LEAGUES]
+    os.makedirs(LEAGUE_DIR, exist_ok=True)
     cw = Crawler(delay=args.delay)
-    meta = {"season": f"{SEASON}/{SEASON+1}", "crawledAt": datetime.now(timezone.utc).isoformat(),
-            "source": "transfermarkt.com", "clubs": []}
-    players, errors = [], []
-
-    for club_id in club_ids:
-        name, slug = CLUBS[club_id]
-        print(f"[club] {name} ({club_id})", flush=True)
-        try:
-            squad = cw.squad(club_id, slug)
-        except Exception as e:
-            print(f"  ! squad failed: {e}", flush=True); errors.append((club_id, "squad", str(e))); continue
-        if args.limit:
-            squad = squad[: args.limit]
-        meta["clubs"].append({"id": club_id, "name": name, "squadSize": len(squad)})
-        for p in squad:
+    membership = {}
+    mf = os.path.join(BASE, "data", "membership.json")
+    if os.path.exists(mf):
+        membership = json.load(open(mf))
+    grand_total = grand_err = 0
+    for key in league_keys:
+        lg = next(L for L in LEAGUES if L["key"] == key)
+        print(f"===== {lg['name']} ({key}) =====", flush=True)
+        clubs_meta, players, errors = [], [], []
+        for club_id in lg["clubs"]:
             try:
-                rec = cw.player(p["id"])
-                p.update(rec)
-                p["club"] = {"id": club_id, "name": name}
-                p["involvements"] = involvement_summary(p)
-                p["group"] = POS_GROUP.get(p.get("position", ""), "?")
-                # drop bulky raw fields
-                p.pop("youth", None); p.pop("history", None)
-                players.append(p)
-                print(f"  {p['name'][:28]:28} {p.get('position','')[:16]:16} inv={len(p['involvements'])}", flush=True)
+                name, squad = cw.squad(club_id)
             except Exception as e:
-                print(f"  ! {p.get('name')} ({p.get('id')}) failed: {e}", flush=True)
-                errors.append((club_id, p.get("id"), str(e)))
-            time.sleep(args.delay)
+                print(f"[club {club_id}] squad failed: {e}", flush=True)
+                errors.append({"club": club_id, "error": str(e)})
+                continue
+            if args.limit:
+                squad = squad[: args.limit]
+            clubs_meta.append({"id": club_id, "name": name, "squadSize": len(squad)})
+            for p in squad:
+                try:
+                    cw.player(p["id"])  # populate raw cache (no-op if cached)
+                    membership[p["id"]] = {"clubId": club_id, "clubName": name, "league": key,
+                                           "name": p["name"], "position": p["position"]}
+                    players.append(p["id"])
+                    print(f"  {p['name'][:28]:28} {p['position'][:16]}", flush=True)
+                except Exception as e:
+                    print(f"  ! {p['name']} ({p['id']}) failed: {e}", flush=True)
+                    errors.append({"club": club_id, "player": p["id"], "error": str(e)})
+                time.sleep(args.delay)
+        json.dump({"league": key, "name": lg["name"], "clubs": clubs_meta,
+                   "crawledAt": datetime.now(timezone.utc).isoformat()},
+                  open(os.path.join(LEAGUE_DIR, f"{key}.json"), "w"), ensure_ascii=False, indent=1)
+        json.dump(membership, open(mf, "w"))
+        print(f"{key}: {len(players)} players, {len(errors)} errors", flush=True)
+        grand_total += len(players)
+        grand_err += len(errors)
+    print(f"DONE: {grand_total} players total, {grand_err} errors (raw cache in {RAW_DIR})")
 
-    out = {"meta": meta, "players": players, "errors": errors}
+
+def cmd_assemble(args):
+    registry = {}  # normalized display name -> display name, across all league registries
+    leagues = []
+    for fname in sorted(os.listdir(LEAGUE_DIR)):
+        if not fname.endswith(".json"):
+            continue
+        m = json.load(open(os.path.join(LEAGUE_DIR, fname)))
+        for c in m["clubs"]:
+            registry[norm_key(c["name"])] = c["name"]
+        leagues.append({"key": m["league"], "name": m["name"], "clubs": m["clubs"]})
+    if not registry:
+        print("no league registries found — run `crawl` first")
+        sys.exit(1)
+    order = {L["key"]: i for i, L in enumerate(LEAGUES)}
+    expected = {L["key"]: len(L["clubs"]) for L in LEAGUES}
+    complete = [l for l in leagues if expected.get(l["key"], 0) == len(l["clubs"])]
+    for l in leagues:
+        if l not in complete:
+            print(f"WARN: league {l['key']} incomplete ({len(l['clubs'])}/{expected.get(l['key'])} clubs) — excluded")
+    leagues = sorted(complete, key=lambda l: order.get(l["key"], 99))
+    if not leagues:
+        print("no complete leagues — run `crawl` first")
+        sys.exit(1)
+
+    mf = os.path.join(BASE, "data", "membership.json")
+    if not os.path.exists(mf):
+        print("data/membership.json missing — run `crawl` first")
+        sys.exit(1)
+    membership = json.load(open(mf))
+    known = {c["id"] for lg in leagues for c in lg["clubs"]}
+
+    players, errors = [], []
+    for pid, mem in membership.items():
+        try:
+            rawf = os.path.join(RAW_DIR, f"{pid}.json")
+            if not os.path.exists(rawf) or mem["clubId"] not in known:
+                continue
+            rec = json.load(open(rawf))
+            inv = involvement_summary(rec, registry)
+            players.append({"id": pid, "name": mem["name"], "position": mem.get("position", ""),
+                            "group": POS_GROUP.get(mem.get("position", ""), "?"),
+                            "league": mem["league"],
+                            "club": {"id": mem["clubId"], "name": mem["clubName"]},
+                            "involvements": inv})
+        except Exception as e:
+            errors.append({"player": pid, "error": str(e)})
+    out = {"meta": {"season": f"{SEASON}/{SEASON+1}", "leagues": leagues,
+                    "crawledAt": datetime.now(timezone.utc).isoformat(),
+                    "source": "transfermarkt.com"},
+           "players": players, "errors": errors}
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     json.dump(out, open(args.out, "w"), ensure_ascii=False, indent=1)
-    print(f"\nOK: {len(players)} players, {len(errors)} errors -> {args.out}")
+    print(f"OK: {len(players)} players, {len(errors)} errors -> {args.out}")
+
+
+def main():
+    ap = argparse.ArgumentParser(description="big-4 league football crawler")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    pc = sub.add_parser("crawl", help="fetch squads + player history into raw cache")
+    pc.add_argument("--leagues", help="comma list of league keys (default: all)")
+    pc.add_argument("--limit", type=int, help="max players per club (smoke test)")
+    pc.add_argument("--delay", type=float, default=1.1)
+    pc.set_defaults(fn=cmd_crawl)
+    pa = sub.add_parser("assemble", help="rebuild final dataset from cache")
+    pa.add_argument("--out", default=os.path.join(BASE, "data", "pl-connections.json"))
+    pa.set_defaults(fn=cmd_assemble)
+    args = ap.parse_args()
+    args.fn(args)
 
 
 if __name__ == "__main__":

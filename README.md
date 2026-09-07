@@ -1,14 +1,17 @@
-# PL Connections
+# Club Connections
 
-Which current **Premier League** players have been part of each club — **first team or academy** — with stint years.
+Which current players in Europe's **big four leagues** — Premier League, Bundesliga, Serie A, La Liga — have been part of each club, **first team or academy**, with stint years.
 
-Live demo: https://jorgequijano.github.io/pl-connections/
+Live: https://jorgequijano.github.io/pl-connections/
 
 ## How it works
 
-- **Rosters**: each PL club's first-team squad for the current season, from [Transfermarkt](https://www.transfermarkt.com) squad pages.
-- **Per-player history**: every player's youth affiliations ("Youth clubs" record) + full transfer history (incl. youth-level moves), from the profile page and Transfermarkt's internal `ceapi/transferHistory` JSON endpoint.
-- **Output**: one static JSON (`data/pl-connections.json`) committed to the repo; the site is a dependency-free static page that filters it client-side.
+- **Rosters**: first-team squads (26/27 season) from [Transfermarkt](https://www.transfermarkt.com) squad pages (neutral `/-/kader/verein/{id}` URLs).
+- **Per-player history**: youth affiliations ("Youth clubs" box) + full transfer history (incl. youth-level moves) from the profile page and Transfermarkt's internal `ceapi/transferHistory` JSON endpoint.
+- **Pipeline (two phases)**:
+  1. `crawl` — fetch squads + player history into a resumable raw cache (`data/raw/`), write per-league club registries (`data/leagues/{eng,deu,ita,esp}.json`) and squad membership (`data/membership.json`)
+  2. `assemble` — rebuild the final dataset from cache, normalizing every club mention against a full 78-club registry (order-independent cross-league matching)
+- **Output**: one static JSON (`data/pl-connections.json`); the site is a dependency-free static page (league tabs, ranking chart, searchable club drill-down).
 
 ## Try it locally
 
@@ -20,12 +23,14 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install requests beautifulsoup4
-.venv/bin/python scripts/crawl.py                # all 20 PL clubs
-.venv/bin/python scripts/crawl.py --clubs 631,11 # subset (spike/test)
-.venv/bin/python scripts/crawl.py --limit 3      # smoke test per club
-```
 
-Raw per-player responses are cached in `data/raw/` (gitignored) so re-runs resume instead of re-fetching. The crawl sleeps ~1.1s between requests to stay polite.
+# fetch (resumable; sleeps ~1.3s between requests, auto-backoff on 403/429)
+.venv/bin/python scripts/crawl.py crawl --leagues eng,deu,ita,esp
+.venv/bin/python scripts/crawl.py crawl --leagues ita --limit 3   # smoke test
+
+# rebuild the dataset from cache (no network)
+.venv/bin/python scripts/crawl.py assemble
+```
 
 A GitHub Action (`.github/workflows/refresh.yml`) re-crawls monthly (and on manual dispatch), committing the dataset when it changes.
 
@@ -33,13 +38,16 @@ A GitHub Action (`.github/workflows/refresh.yml`) re-crawls monthly (and on manu
 
 ```jsonc
 {
-  "meta": { "season": "26/27", "crawledAt": "...", "clubs": [{"id": 631, "name": "Chelsea", "squadSize": 30}] },
+  "meta": {
+    "season": "26/27",
+    "leagues": [{ "key": "eng", "name": "Premier League",
+                  "clubs": [{ "id": 631, "name": "Chelsea", "squadSize": 28 }] }]
+  },
   "players": [{
     "id": "357662", "name": "Declan Rice", "position": "Defensive Midfield", "group": "MF",
-    "club": { "id": 11, "name": "Arsenal" },
+    "league": "eng", "club": { "id": 11, "name": "Arsenal" },
     "involvements": [
       { "club": "Chelsea", "role": "academy", "years": "2006-2013" },
-      { "club": "West Ham United", "role": "academy", ... },
       { "club": "West Ham United", "role": "senior", ... },
       { "club": "Arsenal", "role": "senior", ... }
     ]
@@ -47,10 +55,10 @@ A GitHub Action (`.github/workflows/refresh.yml`) re-crawls monthly (and on manu
 }
 ```
 
-`role` is `senior` (played in the senior squad), `academy` (youth-club affiliation / youth-level move only), or `both`. Youth-level rows collapse onto their parent club via an alias table; unknown small clubs are kept under their raw name.
+`role` is `senior`, `academy` (youth-club affiliation / youth-level move only), or `both`. Youth-level rows collapse onto their parent club via an alias + registry matcher.
 
 ## Caveats
 
-- **Personal/hobby use.** Transfermarkt data is scraped via unofficial endpoints — cache the output, don't hammer the site, and don't build a commercial product on it without a licensed source.
+- **Personal/hobby use.** Transfermarkt data is scraped via unofficial endpoints — cache the output, don't hammer the site, don't build a commercial product on it without a licensed source. Transfermarkt rate-limits aggressively; the crawler backs off and resumes from cache, and runs are best spread out.
 - Rosters are snapshot-at-crawl-time; re-run after transfer windows.
-- Roles are inferred from Transfermarkt's own club naming (youth markers like `U18`/`Yth.`/`Youth`). Edge cases exist — treat counts as approximate.
+- Roles are inferred from Transfermarkt club naming (youth markers like `U18`/`Yth.`/`II`). Edge cases exist — treat counts as approximate.

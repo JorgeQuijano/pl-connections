@@ -21,6 +21,15 @@ h1 { margin: 0; font-size: 30px; letter-spacing: -.5px; }
 .meta { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
 main { max-width: 980px; margin: 0 auto; padding: 8px 20px 60px; }
 h2 { font-size: 18px; margin: 26px 0 10px; }
+/* league tabs */
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 20px 0 4px; }
+.tab {
+  background: var(--panel); color: var(--text); border: 1px solid var(--line);
+  padding: 8px 18px; border-radius: 10px; cursor: pointer; font-size: 14.5px;
+  font-weight: 600; transition: all .12s ease;
+}
+.tab:hover { border-color: var(--accent); }
+.tab.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 #club-select {
   width: 100%; max-width: 460px; appearance: none; -webkit-appearance: none;
   background: var(--panel) url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238b91b5' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center;
@@ -141,4 +150,6 @@ td .expand:hover { color: var(--accent); }
   .bar-row { grid-template-columns: 96px 1fr 26px; gap: 8px; padding: 3px 2px; }
   .bar-club { font-size: 12.5px; }
   .legend { gap: 12px; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+  .tab { flex: 1 0 auto; text-align: center; padding: 10px 8px; font-size: 13.5px; }
 }

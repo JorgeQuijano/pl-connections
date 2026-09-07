@@ -1,0 +1,97 @@
+{
+ "league": "deu",
+ "name": "Bundesliga",
+ "clubs": [
+  {
+   "id": 3,
+   "name": "FC Köln",
+   "squadSize": 29
+  },
+  {
+   "id": 15,
+   "name": "Bayer Leverkusen",
+   "squadSize": 29
+  },
+  {
+   "id": 16,
+   "name": "Borussia Dortmund",
+   "squadSize": 30
+  },
+  {
+   "id": 18,
+   "name": "Borussia Mönchengladbach",
+   "squadSize": 30
+  },
+  {
+   "id": 24,
+   "name": "Eintracht Frankfurt",
+   "squadSize": 26
+  },
+  {
+   "id": 27,
+   "name": "Bayern Munich",
+   "squadSize": 23
+  },
+  {
+   "id": 33,
+   "name": "Schalke 04",
+   "squadSize": 27
+  },
+  {
+   "id": 39,
+   "name": "Mainz 05",
+   "squadSize": 26
+  },
+  {
+   "id": 41,
+   "name": "Hamburger SV",
+   "squadSize": 28
+  },
+  {
+   "id": 60,
+   "name": "SC Freiburg",
+   "squadSize": 27
+  },
+  {
+   "id": 64,
+   "name": "Elversberg",
+   "squadSize": 27
+  },
+  {
+   "id": 79,
+   "name": "VfB Stuttgart",
+   "squadSize": 30
+  },
+  {
+   "id": 86,
+   "name": "Werder Bremen",
+   "squadSize": 32
+  },
+  {
+   "id": 89,
+   "name": "Union Berlin",
+   "squadSize": 30
+  },
+  {
+   "id": 127,
+   "name": "SC Paderborn",
+   "squadSize": 32
+  },
+  {
+   "id": 167,
+   "name": "FC Augsburg",
+   "squadSize": 28
+  },
+  {
+   "id": 533,
+   "name": "TSG Hoffenheim",
+   "squadSize": 27
+  },
+  {
+   "id": 23826,
+   "name": "RB Leipzig",
+   "squadSize": 30
+  }
+ ],
+ "crawledAt": "2026-09-07T04:56:40.697969+00:00"
+}

@@ -1,10 +1,19 @@
-/* PL Connections — pure vanilla, no deps. Reads data/pl-connections.json. */
+/* Club Connections — pure vanilla, no deps. Reads data/pl-connections.json. */
 const DATA_URL = 'data/pl-connections.json';
-const state = { players: [], clubs: [], selected: null, pos: new Set(), query: '', metric: 'academy' };
+const state = {
+  leagues: [], players: [], league: null, selected: null,
+  pos: new Set(), query: '', metric: 'academy',
+};
 const ROLE_LABEL = { senior: 'First team', academy: 'Academy only', both: 'First team + academy' };
 const METRIC_ROLES = { academy: ['academy', 'both'], senior: ['senior', 'both'], any: ['academy', 'senior', 'both'] };
 const METRIC_VERB = { academy: 'came through the academy at', senior: 'played first-team football for', any: 'have a connection to' };
 const $ = (id) => document.getElementById(id);
+
+function currentLeague() { return state.leagues.find(l => l.key === state.league) || null; }
+function currentClubs() { const lg = currentLeague(); return lg ? lg.clubs : []; }
+function currentPlayers() {
+  return state.league ? state.players.filter(p => p.league === state.league) : state.players;
+}
 
 async function init() {
   let data;
@@ -12,15 +21,16 @@ async function init() {
     const r = await fetch(DATA_URL);
     data = await r.json();
   } catch (e) {
-    $('club-picker').innerHTML = '<p class="error">Could not load data/pl-connections.json — serve this folder over HTTP (e.g. <code>python3 -m http.server</code>) or check the file exists.</p>';
+    $('league-tabs').innerHTML = '<p class="error">Could not load data/pl-connections.json — serve this folder over HTTP (e.g. <code>python3 -m http.server</code>) or check the file exists.</p>';
     return;
   }
+  state.leagues = (data.meta && data.meta.leagues) || [];
   state.players = data.players || [];
-  state.clubs = (data.meta && data.meta.clubs) || [];
   const season = (data.meta && data.meta.season) || '26/27';
-  document.getElementById('season-label').textContent = season;
-  $('meta').textContent = `${state.players.length} players · ${state.clubs.length} clubs crawled · snapshot ${(data.meta && data.meta.crawledAt || '').slice(0, 10)} · source: Transfermarkt`;
-  $('club-select').onchange = (e) => selectClub(e.target.value ? Number(e.target.value) : null);
+  const nClubs = state.leagues.reduce((n, l) => n + l.clubs.length, 0);
+  const nPl = state.players.length;
+  $('meta').textContent =
+    `${nPl} players · ${nClubs} clubs · ${state.leagues.map(l => l.name).join(' / ')} · snapshot ${(data.meta && data.meta.crawledAt || '').slice(0, 10)} · source: Transfermarkt`;
   document.querySelectorAll('#metric .chip').forEach(b => {
     b.onclick = () => {
       state.metric = b.dataset.m;
@@ -28,14 +38,42 @@ async function init() {
       renderOverview();
     };
   });
+  if (state.leagues.length) selectLeague(state.leagues[0].key);
+}
+
+function renderTabs() {
+  const wrap = $('league-tabs');
+  wrap.innerHTML = '';
+  for (const l of state.leagues) {
+    const b = document.createElement('button');
+    b.className = 'tab' + (state.league === l.key ? ' on' : '');
+    b.textContent = l.name;
+    b.setAttribute('role', 'tab');
+    b.onclick = () => selectLeague(l.key);
+    wrap.appendChild(b);
+  }
+}
+
+function selectLeague(key) {
+  state.league = key;
+  state.selected = null;
+  state.query = '';
+  state.pos.clear();
+  $('search').value = '';
+  renderTabs();
+  $('league-name').textContent = currentLeague().name;
+  $('overview-sub').textContent =
+    `How many current ${currentLeague().name} players have a connection to each ${currentLeague().name} club, counted across all ${currentLeague().clubs.length} squads.`;
   renderClubs();
+  renderPos();
+  renderResults();
   renderOverview();
 }
 
 function renderClubs() {
   const sel = $('club-select');
   sel.innerHTML = '<option value="">Pick a club…</option>';
-  for (const c of state.clubs) {
+  for (const c of currentClubs()) {
     const o = document.createElement('option');
     o.value = c.id;
     o.textContent = `${c.name} (${c.squadSize})`;
@@ -46,9 +84,10 @@ function renderClubs() {
 
 function overviewRows() {
   const roles = METRIC_ROLES[state.metric];
-  const rows = state.clubs.map(c => {
+  const players = currentPlayers();
+  return currentClubs().map(c => {
     let total = 0, home = 0;
-    for (const p of state.players) {
+    for (const p of players) {
       const inv = (p.involvements || []).find(i => i.club === c.name);
       if (inv && roles.includes(inv.role)) {
         total++;
@@ -56,9 +95,7 @@ function overviewRows() {
       }
     }
     return { c, total, home, away: total - home };
-  });
-  rows.sort((a, b) => b.total - a.total || a.c.name.localeCompare(b.c.name));
-  return rows;
+  }).sort((a, b) => b.total - a.total || a.c.name.localeCompare(b.c.name));
 }
 
 function renderOverview() {
@@ -82,7 +119,10 @@ function renderOverview() {
     row.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectClub(Number(row.dataset.id)); } };
   });
   const top = rows[0];
-  $('chart-note').textContent = `${top.c.name} tops the ranking: ${top.total} of today's PL players ${METRIC_VERB[state.metric]} ${top.c.name} — ${top.home} still there, ${top.away} playing elsewhere in the league. Click a bar to drill into that club.`;
+  $('chart-note').textContent =
+    top.total
+      ? `${top.c.name} tops the ranking: ${top.total} of today's ${currentLeague().name} players ${METRIC_VERB[state.metric]} ${top.c.name} — ${top.home} still there, ${top.away} playing elsewhere in the league. Click a bar to drill into that club.`
+      : 'No connections recorded for this league yet.';
 }
 
 function selectClub(id) {
@@ -128,14 +168,14 @@ function invYears(inv) {
 }
 
 function renderResults() {
-  const club = state.clubs.find(c => c.id === state.selected);
+  const club = currentClubs().find(c => c.id === state.selected);
   const section = $('results');
   if (!club) { section.hidden = true; return; }
   section.hidden = false;
 
   const rows = [];
   const stats = { senior: 0, academy: 0, both: 0, here: 0 };
-  for (const p of state.players) {
+  for (const p of currentPlayers()) {
     const inv = (p.involvements || []).find(i => i.club === club.name);
     if (!inv) continue;
     stats[inv.role] = (stats[inv.role] || 0) + 1;
@@ -147,7 +187,7 @@ function renderResults() {
   const total = stats.senior + stats.academy + stats.both;
   $('summary').innerHTML =
     `<h2>Connected to ${club.name}</h2>
-     <p><b>${total}</b> player${total === 1 ? '' : 's'} in today's PL have been part of ${club.name}:
+     <p><b>${total}</b> player${total === 1 ? '' : 's'} in today's ${currentLeague().name} have been part of ${club.name}:
      <span class="tag ft">${stats.senior} first team</span>
      <span class="tag ac">${stats.academy} academy only</span>
      <span class="tag bo">${stats.both} both</span>

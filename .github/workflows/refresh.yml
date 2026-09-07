@@ -18,12 +18,14 @@ jobs:
           python-version: '3.12'
       - name: Install deps
         run: pip install requests beautifulsoup4
-      - name: Crawl all PL clubs
-        run: python scripts/crawl.py --delay 1.2
+      - name: Crawl all leagues
+        run: python scripts/crawl.py crawl --leagues eng,deu,ita,esp --delay 1.2
+      - name: Assemble dataset
+        run: python scripts/crawl.py assemble --out data/pl-connections.json
       - name: Commit dataset if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pl-connections.json
-          git diff --cached --quiet || git commit -m "chore: refresh PL connections dataset $(date -u +%F)"
+          git add data/pl-connections.json data/leagues data/membership.json
+          git diff --cached --quiet || git commit -m "chore: refresh dataset $(date -u +%F)"
           git push
