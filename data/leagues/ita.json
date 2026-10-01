@@ -5,63 +5,103 @@
   {
    "id": 5,
    "name": "AC Milan",
-   "squadSize": 28
+   "squadSize": 0
   },
   {
    "id": 12,
    "name": "AS Roma",
-   "squadSize": 25
+   "squadSize": 0
   },
   {
    "id": 46,
    "name": "Inter Milan",
-   "squadSize": 24
+   "squadSize": 0
   },
   {
    "id": 130,
    "name": "Parma",
-   "squadSize": 28
+   "squadSize": 0
   },
   {
    "id": 252,
    "name": "Genoa",
-   "squadSize": 31
+   "squadSize": 0
   },
   {
    "id": 398,
    "name": "Lazio",
-   "squadSize": 33
+   "squadSize": 0
   },
   {
    "id": 410,
    "name": "Udinese",
-   "squadSize": 29
+   "squadSize": 0
   },
   {
    "id": 416,
    "name": "Torino",
-   "squadSize": 29
+   "squadSize": 0
   },
   {
    "id": 430,
    "name": "Fiorentina",
-   "squadSize": 25
+   "squadSize": 0
   },
   {
    "id": 506,
    "name": "Juventus",
-   "squadSize": 28
+   "squadSize": 0
   },
   {
    "id": 607,
    "name": "Venezia",
-   "squadSize": 38
+   "squadSize": 0
   },
   {
    "id": 800,
    "name": "Atalanta",
-   "squadSize": 24
+   "squadSize": 0
+  },
+  {
+   "id": 1005,
+   "name": "Lecce",
+   "squadSize": 0
+  },
+  {
+   "id": 1025,
+   "name": "Bologna",
+   "squadSize": 0
+  },
+  {
+   "id": 1047,
+   "name": "Como",
+   "squadSize": 0
+  },
+  {
+   "id": 1390,
+   "name": "Cagliari",
+   "squadSize": 0
+  },
+  {
+   "id": 2919,
+   "name": "Monza",
+   "squadSize": 0
+  },
+  {
+   "id": 6195,
+   "name": "Napoli",
+   "squadSize": 0
+  },
+  {
+   "id": 6574,
+   "name": "Sassuolo",
+   "squadSize": 0
+  },
+  {
+   "id": 8970,
+   "name": "Frosinone",
+   "squadSize": 0
   }
  ],
- "crawledAt": "2026-09-07T06:35:35.927630+00:00"
+ "crawledAt": "2026-10-01T11:03:38.644711+00:00"
 }

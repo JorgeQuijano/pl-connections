@@ -1,6 +1,107 @@
 {
  "league": "esp",
  "name": "La Liga",
- "clubs": [],
- "crawledAt": "2026-09-07T06:43:38.188911+00:00"
+ "clubs": [
+  {
+   "id": 13,
+   "name": "Atlético Madrid",
+   "squadSize": 0
+  },
+  {
+   "id": 131,
+   "name": "Barcelona",
+   "squadSize": 0
+  },
+  {
+   "id": 150,
+   "name": "Real Betis",
+   "squadSize": 0
+  },
+  {
+   "id": 331,
+   "name": "Osasuna",
+   "squadSize": 0
+  },
+  {
+   "id": 367,
+   "name": "Rayo Vallecano",
+   "squadSize": 0
+  },
+  {
+   "id": 368,
+   "name": "Sevilla",
+   "squadSize": 0
+  },
+  {
+   "id": 418,
+   "name": "Real Madrid",
+   "squadSize": 0
+  },
+  {
+   "id": 621,
+   "name": "Athletic Bilbao",
+   "squadSize": 0
+  },
+  {
+   "id": 630,
+   "name": "Racing Santander",
+   "squadSize": 0
+  },
+  {
+   "id": 681,
+   "name": "Real Sociedad",
+   "squadSize": 0
+  },
+  {
+   "id": 714,
+   "name": "Espanyol",
+   "squadSize": 0
+  },
+  {
+   "id": 897,
+   "name": "Deportivo La Coruña",
+   "squadSize": 0
+  },
+  {
+   "id": 940,
+   "name": "Celta Vigo",
+   "squadSize": 0
+  },
+  {
+   "id": 1049,
+   "name": "Valencia",
+   "squadSize": 0
+  },
+  {
+   "id": 1050,
+   "name": "Villarreal",
+   "squadSize": 0
+  },
+  {
+   "id": 1084,
+   "name": "Málaga",
+   "squadSize": 0
+  },
+  {
+   "id": 1108,
+   "name": "Alavés",
+   "squadSize": 0
+  },
+  {
+   "id": 1531,
+   "name": "Elche",
+   "squadSize": 0
+  },
+  {
+   "id": 3368,
+   "name": "Levante",
+   "squadSize": 0
+  },
+  {
+   "id": 3709,
+   "name": "Getafe",
+   "squadSize": 0
+  }
+ ],
+ "crawledAt": "2026-10-01T11:03:38.937728+00:00"
 }
